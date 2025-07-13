@@ -11,6 +11,7 @@ const geistWorkSans = Work_Sans({
   weight: '400',
   subsets: ['latin'],
 })
+
  
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,7 +43,7 @@ export default function RootLayout({
           <BotProvider>
             <NavBar height="h-24"/>
             {children}
-            <Footer height="h-56"/>
+            <Footer height="h-42"/>
           </BotProvider>
         </ThemeProvider>
       </body>

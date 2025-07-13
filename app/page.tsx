@@ -1,7 +1,8 @@
+
 export default function Home() {
   
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen">
       <div className="py-16 max-w-3xl px-4 m-auto">
         <div className="text-black dark:text-white text-4xl font-bold mb-8">
           Hi, I&apos;m Rahul Lalwani
@@ -44,6 +45,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        
       </div>
       
     </div>

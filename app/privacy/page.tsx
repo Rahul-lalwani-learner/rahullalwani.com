@@ -1,4 +1,9 @@
+import socialsData from "../../src/socials.json";
+
 export default function Privacy(){
+    const emailSocial = socialsData.socials.find(social => social.icon === 'mail');
+    const websiteUrl = "https://rahullalwani.com";
+    
     return (
         <div className="min-h-screen transition-all duration-100 dark:bg-background-black bg-white">
             <div className="max-w-3xl mx-auto px-4 py-16">
@@ -21,7 +26,7 @@ export default function Privacy(){
                         <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                             Welcome to my portfolio! I built{' '}
                             <a 
-                                href="https://rahullalwani.com" 
+                                href={websiteUrl} 
                                 className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors font-medium underline"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -135,10 +140,10 @@ export default function Privacy(){
                             If you have questions about this privacy policy, concerns about your data, or suggestions for improvement, 
                             I&apos;m always happy to discuss. Reach out to me at{' '}
                             <a 
-                                href="mailto:itsrahullalwani@gmail.com" 
+                                href={emailSocial?.href || "mailto:itsrahullalwani@gmail.com"} 
                                 className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors font-medium underline"
                             >
-                                itsrahullalwani@gmail.com
+                                {emailSocial?.href.replace('mailto:', '') || "itsrahullalwani@gmail.com"}
                             </a>
                             {' '}and I&apos;ll get back to you promptly.
                         </p>

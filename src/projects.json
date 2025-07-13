@@ -1,0 +1,349 @@
+{
+  "projects": [
+    {
+      "name": "Second Brain + Extra Memory",
+      "description": "A second-brain-style full stack knowledge management system built with MERN stack + JWT auth.",
+      "image": "/second-brain.png",
+      "tags": [
+        "MongoDB",
+        "Express",
+        "React",
+        "Node.js",
+        "TailwindCSS",
+        "TypeScript"
+      ],
+      "type": "Web App",
+      "links": [
+        {
+          "name": "Source (Backend)",
+          "href": "https://github.com/Rahul-lalwani-learner/Extra-memory-app",
+          "icon": "github"
+        },
+        {
+          "name": "Source (Frontend)",
+          "href": "https://github.com/Rahul-lalwani-learner/Extra-Memory-FrontEnd",
+          "icon": "github"
+        }, 
+        {
+          "name": "Post",
+          "href": "https://www.linkedin.com/posts/itsrahullalwani_react-typescript-tailwindcss-activity-7345128119051194369-he55?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2GySsBjV6nZZMia9ZgINf0otHbSnXeMM4",
+          "icon": "linkedin"
+        }
+        
+      ]
+    },
+    {
+      "name": "ExcaliDraw \u2013 Collaborative Drawing & Chat App",
+      "description": "Real-time collaborative drawing app with WebSocket-powered chat, built using Next.js, React, and Prisma.",
+      "image": "/excalidraw.png",
+      "tags": [
+        "Next.js",
+        "WebSocket",
+        "Prisma",
+        "React",
+        "PostgreSQL"
+      ],
+      "type": "Web App",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Rahul-lalwani-learner/excalidraw-draw-app",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Chord Craft",
+      "description": "A deep learning system to identify ukulele chords using CNNs and audio feature extraction with Librosa, deployed via Streamlit.",
+      "image": "/chord-craft.png",
+      "tags": [
+        "TensorFlow",
+        "Keras",
+        "Librosa",
+        "Python",
+        "Streamlit"
+      ],
+      "type": "AI/ML/DL",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Rahul-lalwani-learner/Chord-craft",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "SkimLit \u2013 Research Paper Sentence Classifier",
+      "description": "Multiclass NLP model for classifying sentences in medical research abstracts using Universal Sentence Encoder and TensorFlow.",
+      "image": "/skimlit.png",
+      "tags": [
+        "TensorFlow",
+        "NLP",
+        "USE",
+        "Medical NLP"
+      ],
+      "type": "AI/ML/DL",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://colab.research.google.com/drive/15PDo5-tWXRj-LSTTf4G_la6KhOSxesE1?usp=sharing",
+          "icon": "colab"
+        }
+      ]
+    },
+    {
+      "name": "Kidney Tumor Segmentation",
+      "description": "Medical image segmentation pipeline using nnU-Net, UNETR, MiSCNN, and TotalSegmentator with 3D volume processing.",
+      "image": "/kidney-tumor.png",
+      "tags": [
+        "PyTorch",
+        "nnU-Net",
+        "UNETR",
+        "Medical Imaging",
+        "MiSCNN",
+        "TotalSegmentator"
+      ],
+      "type": "Computer Vision",
+      "links": [
+        {
+          "name": "DriveLink",
+          "href": "https://drive.google.com/drive/folders/1JTsFdQuN0nJXhaR5PKi3xKPzhvEjx-p1?usp=sharing",
+          "icon": "colab"
+        }
+      ]
+    },
+    {
+      "name": "Cloud Coverage Detection",
+      "description": "Hackathon project using satellite image classification to determine cloud coverage levels from satellite images.",
+      "image": "/cloud-coverage.png",
+      "tags": [
+        "Image Processing",
+        "Deep Learning",
+        "Hackathon", 
+        "IITRoorkee"
+      ],
+      "type": "Hackathon / Research",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://drive.google.com/file/d/1AKy-fHyp5TMB4F9oz33dhfGumhOcvmfz/view?usp=sharing",
+          "icon": "colab"
+        }
+      ]
+    },
+    {
+      "name": "Palm Print Detection",
+      "description": "Biometric recognition system based on palm prints with full paper replication and dataset preprocessing.",
+      "image": "/palmprint.png",
+      "tags": [
+        "TensorFlow",
+        "OpenCV",
+        "Biometrics",
+        "Computer Vision"
+      ],
+      "type": "Computer Vision",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Rahul-lalwani-learner/Machine-learning-projects/tree/main/Palmprint-detection-project",
+          "icon": "github"
+        }, 
+        {
+            "name": "Notebook",
+            "href": "https://github.com/Rahul-lalwani-learner/Machine-learning-projects/blob/main/Palmprint-detection-project/end_to_end_palmprint_detection.ipynb",
+            "icon": "jupyter"
+        }
+      ]
+    },
+    {
+      "name": "Capuchin Bird Audio Classification",
+      "description": "A TensorFlow model to classify Capuchin bird calls using audio signal processing and spectrograms.",
+      "image": "/capuchin-audio.png",
+      "tags": [
+        "TensorFlow",
+        "Audio",
+        "Signal Processing", 
+        "Librosa"
+      ],
+      "type": "AI/ML/DL",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://drive.google.com/drive/folders/1fXSR4vraQ9tgtdtUZbp9UnNHLST2i6Eo?usp=sharing",
+          "icon": "colab"
+        }
+      ]
+    },
+    {
+      "name": "Car Counter",
+      "description": "Used YOLO and OpenCV to detect and count cars in traffic surveillance footage.",
+      "image": "/car-counter.png",
+      "tags": [
+        "YOLO",
+        "OpenCV",
+        "Computer Vision",
+        "Object Detection"
+      ],
+      "type": "Computer Vision",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Rahul-lalwani-learner/Machine-learning-projects/tree/main/Project%201%20-%20Car%20Counter",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "People Counter in Mall",
+      "description": "Real-time footfall analysis project that detects and counts people in shopping malls using object detection.",
+      "image": "/people-counter.png",
+      "tags": [
+        "YOLO",
+        "Computer Vision",
+        "Analytics"
+      ],
+      "type": "Computer Vision",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Rahul-lalwani-learner/Machine-learning-projects/tree/main/Project%202%20-%20People%20Counter",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "PPE Detection",
+      "description": "Detection of personal protective equipment like helmets, vests, and masks in video feeds for workplace safety.",
+      "image": "/ppe-detection.png",
+      "tags": [
+        "YOLO",
+        "Safety",
+        "Computer Vision"
+      ],
+      "type": "Computer Vision",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://colab.research.google.com/drive/183CmAMWdKh-0qLHnR4GEqBdTYak9-zGe?usp=sharing",
+          "icon": "colab"
+        }
+      ]
+    },
+    {
+      "name": "Poker Hand Detection",
+      "description": "Real-time detection of poker cards and hands using OpenCV and object detection.",
+      "image": "/poker-detection.png",
+      "tags": [
+        "YOLO",
+        "OpenCV",
+        "Object Detection",
+        "Card Games"
+      ],
+      "type": "Computer Vision",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://colab.research.google.com/drive/1vZ1QJRbDfhARHjon6qSNAuWWU3BE7qiu?usp=sharing",
+          "icon": "colab"
+        }
+      ]
+    },
+    {
+      "name": "Bulldozer Price Prediction",
+      "description": "Regression model to predict bulldozer resale prices using ensemble ML methods.",
+      "image": "/bulldozer-price.png",
+      "tags": [
+        "Regression",
+        "Ensemble",
+        "Machine Learning"
+      ],
+      "type": "AI/ML/DL",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Rahul-lalwani-learner/Machine-learning-projects/tree/main/Bulldozer-price-prediction",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Dog Breed Classification",
+      "description": "TensorFlow model that classifies dog breeds from images using transfer learning and fine-tuning.",
+      "image": "/dog-breed.png",
+      "tags": [
+        "TensorFlow",
+        "Image Classification",
+        "Transfer Learning"
+      ],
+      "type": "AI/ML/DL",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://colab.research.google.com/drive/13DBYHIHq2_0GjX1uT5iJJUmEU7xgP5r0?usp=sharing",
+          "icon": "colab"
+        }
+      ]
+    },
+    {
+      "name": "BitPredict \u2013 Time Series Forecasting",
+      "description": "Cryptocurrency price forecasting model using time series techniques with TensorFlow.",
+      "image": "/bitpredict.jpg",
+      "tags": [
+        "Time Series",
+        "TensorFlow",
+        "Finance"
+      ],
+      "type": "AI/ML/DL",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://colab.research.google.com/drive/1Qk-14XBpB_0YG59bixO0oQsiTcMjq9yt?usp=sharing",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "ViT Paper Replication",
+      "description": "Reproduced Vision Transformer (ViT) as per original paper using PyTorch. Trained on image dataset for classification.",
+      "image": "/vit-paper.png",
+      "tags": [
+        "PyTorch",
+        "Transformer",
+        "Vision Transformer"
+      ],
+      "type": "Hackathon / Research",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://colab.research.google.com/drive/1swjDxKLn0QyJLZt5qIOJDa1NVUdFY85V?usp=sharing",
+          "icon": "colab"
+        }, 
+        {
+          "name": "Paper",
+          "href": "https://arxiv.org/abs/2010.11929",
+          "icon": "document"
+        }
+      ]
+    },
+    {
+      "name": "JWT-Protected Todo App",
+      "description": "A full-featured todo app with JWT auth, Node.js backend, and CRUD operations.",
+      "image": "/jwt-todo.png",
+      "tags": [
+        "Node.js",
+        "JWT",
+        "Express",
+        "Web App"
+      ],
+      "type": "Web App",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Rahul-lalwani-learner/Todo-Application-with-Authorization-using-JWTs",
+          "icon": "github"
+        }
+      ]
+    }
+    
+  ]
+}

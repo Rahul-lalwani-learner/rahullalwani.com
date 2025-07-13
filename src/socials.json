@@ -1,0 +1,19 @@
+{
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "href": "https://www.linkedin.com/in/itsrahullalwani/",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "href": "https://github.com/Rahul-lalwani-learner",
+      "icon": "github"
+    },
+    {
+      "name": "Email",
+      "href": "mailto:itsrahullalwani@gmail.com",
+      "icon": "mail"
+    }
+  ]
+}

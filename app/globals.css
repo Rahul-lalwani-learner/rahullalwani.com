@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 :root{
   margin: 0;
   padding: 0;
@@ -13,6 +15,8 @@
   --color-gray-700: #9ca3af;
   --color-background-black: #030712;
   --color-hover-black: #1f2937;
+  --color-gray-background: #f5f6f8;
+  --color-light-border: #e5e7eb;
 }
 
 
