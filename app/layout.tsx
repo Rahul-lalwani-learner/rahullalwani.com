@@ -3,6 +3,8 @@ import { Geist, Geist_Mono, Work_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./context/ThemeContext";
 import { BotProvider } from "./context/BotContext";
+import { Footer } from "./components/Footer";
+import { NavBar } from "./components/Navbar";
 
 const geistWorkSans = Work_Sans({
   variable: "--font-work-sans",
@@ -33,12 +35,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistWorkSans.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistWorkSans.className} ${geistSans.variable} ${geistMono.variable} antialiased dark:bg-background-black bg-white transition-all duration-100`}
         suppressHydrationWarning={true}
       >
         <ThemeProvider>
           <BotProvider>
+            <NavBar height="h-24"/>
             {children}
+            <Footer height="h-56"/>
           </BotProvider>
         </ThemeProvider>
       </body>

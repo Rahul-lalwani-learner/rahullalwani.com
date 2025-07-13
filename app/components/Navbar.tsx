@@ -22,7 +22,7 @@ export function NavBar({ height }: NavBarProps){
                 <button className="p-2 hover:text-black dark:text-gray-700 dark:hover:text-white text-gray-200 transition-colors cursor-pointer">blog</button>
                 <button className="p-2 hover:text-black dark:text-gray-700 dark:hover:text-white text-gray-200 transition-colors cursor-pointer">contact</button>
             </div>
-            <div className="flex w-24 justify-between">
+            <div className="flex w-18 justify-between">
                 <div onClick={toggleBot} className="p-2 hover:bg-gray-100 dark:hover:bg-hover-black rounded-md transition-all duration-100 cursor-pointer dark:text-white text-black">
                     {bot ? <BotOn/> : <BotOff/>}
                 </div>
