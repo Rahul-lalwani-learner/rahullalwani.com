@@ -1,0 +1,64 @@
+---
+title: "Building a Modern Portfolio with Next.js 15"
+description: "Learn how to create a beautiful, responsive portfolio using Next.js 15, Tailwind CSS, and TypeScript with dark mode support."
+date: "2024-12-19"
+author: "Rahul Lalwani"
+tags: ["Next.js", "React", "TypeScript", "Portfolio", "Web Development"]
+featured: true
+slug: "building-modern-portfolio-nextjs-15"
+readTime: "8 min read"
+---
+
+# Building a Modern Portfolio with Next.js 15
+
+In this comprehensive guide, we'll explore how to build a stunning portfolio website using the latest technologies including Next.js 15, Tailwind CSS, and TypeScript.
+
+## Why Next.js 15?
+
+Next.js 15 brings several exciting features:
+
+- **App Router**: Enhanced routing with better performance
+- **Server Components**: Improved server-side rendering
+- **TypeScript**: First-class TypeScript support
+- **Image Optimization**: Built-in image optimization
+
+## Setting Up the Project
+
+First, let's create a new Next.js project:
+
+```bash
+npx create-next-app@latest my-portfolio --typescript --tailwind --eslint
+```
+
+## Key Features We'll Build
+
+1. **Responsive Design**: Mobile-first approach
+2. **Dark Mode**: Toggle between light and dark themes
+3. **Contact Form**: Integrated with email service
+4. **Blog System**: MDX-powered blog
+5. **Performance**: Optimized for speed
+
+## Dark Mode Implementation
+
+We'll use React Context to manage theme state:
+
+```tsx
+const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+```
+
+## Contact Form with Resend
+
+Integrate email functionality using Resend API:
+
+```tsx
+const response = await fetch('/api/send-email', {
+  method: 'POST',
+  body: JSON.stringify(formData),
+});
+```
+
+## Conclusion
+
+Building a modern portfolio requires attention to detail, performance optimization, and user experience. With Next.js 15 and the right tools, you can create something truly exceptional.
+
+Happy coding! 🚀
