@@ -25,7 +25,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Rahul Lalwani - Portfolio",
-  description: "Full-stack developer and AI enthusiast building innovative web applications",
+  description: "Rahul Lalwani - AI Developer & Web Enthusiast",
   icons: {
     icon: '/favicon.png',
     shortcut: '/favicon.png',

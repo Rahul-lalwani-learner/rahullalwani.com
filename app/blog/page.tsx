@@ -63,7 +63,7 @@ export default async function Blog() {
     const blogPosts = await getBlogPosts();
 
     return (
-        <div className="max-w-3xl m-auto p-4 pb-8">
+        <div className="max-w-3xl m-auto p-4 pt-8 pb-8">
             {/* Header */}
             <h1 className={`font-bold text-5xl dark:text-white text-black mb-8 ${calistoga.className}`}>
                 my blog
