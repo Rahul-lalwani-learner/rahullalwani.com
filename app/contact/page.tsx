@@ -79,7 +79,7 @@ export default function Contact(){
                                 onChange={handleChange}
                                 placeholder="Name"
                                 required
-                                className="w-full px-4 py-3 rounded-lg border border-light-border dark:border-gray-200 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-200"
+                                className="w-full px-4 py-3 rounded-lg border border-light-border dark:border-gray-200 bg-white dark:bg-background-black text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-200"
                             />
                         </div>
                         <div>
@@ -90,7 +90,7 @@ export default function Contact(){
                                 onChange={handleChange}
                                 placeholder="Email"
                                 required
-                                className="w-full px-4 py-3 rounded-lg border border-light-border dark:border-gray-200 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-200"
+                                className="w-full px-4 py-3 rounded-lg border border-light-border dark:border-gray-200 bg-white dark:bg-background-black text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-200"
                             />
                         </div>
                     </div>
@@ -104,7 +104,7 @@ export default function Contact(){
                             placeholder="Leave feedback about the site, career opportunities or just to say hello etc."
                             required
                             rows={6}
-                            className="w-full px-4 py-3 rounded-lg border border-light-border dark:border-gray-200 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-200 resize-vertical"
+                            className="w-full px-4 py-3 rounded-lg border border-light-border dark:border-gray-200 bg-white dark:bg-background-black text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-200 resize-vertical"
                         />
                     </div>
 
