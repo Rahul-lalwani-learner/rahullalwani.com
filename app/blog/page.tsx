@@ -66,7 +66,7 @@ export default async function Blog() {
         <div className="max-w-3xl m-auto p-4 pb-8">
             {/* Header */}
             <h1 className={`font-bold text-5xl dark:text-white text-black mb-8 ${calistoga.className}`}>
-                my blog.
+                my blog
             </h1>
 
             {/* Search and Posts */}

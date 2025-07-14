@@ -68,7 +68,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
-      <div className="container max-w-3xl mx-auto px-4 py-24">
+      <div className="container max-w-3xl mx-auto p-4 pt-8 pb-8">
         {/* Back to Blog */}
         <Link
           href="/blog"

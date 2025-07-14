@@ -1,4 +1,11 @@
+import { Calistoga } from "next/font/google";
 import socialsData from "../../src/socials.json";
+
+const giestCalistoga = Calistoga({
+    variable: "--font-calistoga",
+    weight: '400',
+    subsets: ['latin'],
+})
 
 export default function Privacy(){
     const emailSocial = socialsData.socials.find(social => social.icon === 'mail');
@@ -6,11 +13,11 @@ export default function Privacy(){
     
     return (
         <div className="min-h-screen transition-all duration-100 dark:bg-background-black bg-white">
-            <div className="max-w-3xl mx-auto px-4 py-16">
+            <div className="max-w-3xl mx-auto p-4 pt-8 py-16">
                 <div className="space-y-8">
                     {/* Header */}
                     <div className="text-center mb-12">
-                        <h1 className="text-4xl font-bold text-black dark:text-white mb-4">
+                        <h1 className={`text-4xl font-bold text-black dark:text-white mb-4 ${giestCalistoga.className}`}>
                             Privacy Policy
                         </h1>
                         <p className="text-gray-600 dark:text-gray-300 text-sm">

@@ -1,6 +1,52 @@
 {
   "projects": [
     {
+      "name": "ExcaliDraw \u2013 Collaborative Drawing & Chat App",
+      "description": "Real-time collaborative drawing app with WebSocket-powered chat, built using Next.js, React, and Prisma.",
+      "image": "/excalidraw.png",
+      "tags": [
+        "Next.js",
+        "WebSocket",
+        "Prisma",
+        "React",
+        "PostgreSQL"
+      ],
+      "type": "Web App",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Rahul-lalwani-learner/excalidraw-draw-app",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Heart and Respiratory Sound Expert System",
+    "description": "AI system for detecting heart and lung anomalies from auscultation sounds with a clinical interface.",
+      "image": "/heart-respiratory-sound.png",
+      "tags": [
+        "Machine Learning",
+        "Audio Signal Processing",
+        "Heart Sound",
+        "Respiratory Sound",
+        "Streamlit",
+        "Python"
+      ],
+      "type": "AI/ML/DL",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://drive.google.com/drive/folders/1ikqZx8cSknJ_Al2glNnSRD5bXupK3akm?usp=sharing",
+          "icon": "colab"
+        }, 
+        {
+          "name": "Research Paper",
+          "href": "https://drive.google.com/file/d/13g6meuNjP0pDJRik_Ea1npV57_a-sTzZ/view?usp=sharing",
+          "icon": "document"
+        }
+      ]
+    },
+    {
       "name": "Second Brain + Extra Memory",
       "description": "A second-brain-style full stack knowledge management system built with MERN stack + JWT auth.",
       "image": "/second-brain.png",
@@ -30,26 +76,6 @@
           "icon": "linkedin"
         }
         
-      ]
-    },
-    {
-      "name": "ExcaliDraw \u2013 Collaborative Drawing & Chat App",
-      "description": "Real-time collaborative drawing app with WebSocket-powered chat, built using Next.js, React, and Prisma.",
-      "image": "/excalidraw.png",
-      "tags": [
-        "Next.js",
-        "WebSocket",
-        "Prisma",
-        "React",
-        "PostgreSQL"
-      ],
-      "type": "Web App",
-      "links": [
-        {
-          "name": "Source",
-          "href": "https://github.com/Rahul-lalwani-learner/excalidraw-draw-app",
-          "icon": "github"
-        }
       ]
     },
     {

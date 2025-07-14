@@ -62,7 +62,7 @@ export default function Contact(){
     }
 
     return (
-        <div className="max-w-3xl m-auto p-4 pb-8">
+        <div className="max-w-3xl m-auto p-4 pt-8 pb-8">
             <h1 className={`font-bold text-5xl dark:text-white text-black mb-8 ${giestCalistoga.className}`}>
                 Contact me
             </h1>

@@ -63,7 +63,7 @@ export default function SearchClient({ initialPosts }: SearchClientProps) {
                         placeholder="Search something..."
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
-                        className="w-full pl-12 pr-12 py-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-black text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-200"
+                        className="w-full pl-12 pr-12 py-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-200"
                     />
                     {searchTerm && (
                         <button
