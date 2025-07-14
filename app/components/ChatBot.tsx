@@ -2,6 +2,9 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { useBot } from '../context/BotContext';
+import { SendIcon } from '../ui/icons/SendIcon';
+import { DeleteIcon } from '../ui/icons/DeleteIcon';
+import { ChatIcon } from '../ui/icons/ChatIcon';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -62,6 +65,10 @@ export function ChatBot() {
     }
   };
 
+  const clearChat = () => {
+    setMessages([]);
+  };
+
   // Don't render if bot is disabled
   if (!bot) return null;
 
@@ -71,17 +78,15 @@ export function ChatBot() {
       {!isChatOpen && (
         <button
           onClick={openChat}
-          className="fixed bottom-6 right-6 z-50 bg-black dark:bg-white text-white dark:text-black p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+          className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-black dark:bg-white text-white dark:text-black p-3 sm:p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-          </svg>
+          <ChatIcon size='size-6'/>
         </button>
       )}
 
       {/* Chat Window */}
       {isChatOpen && (
-        <div className="fixed bottom-6 right-6 z-50 w-96 h-[500px] bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-2xl flex flex-col">
+        <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-72 sm:w-80 md:w-96 h-[500px] max-h-[calc(100vh-2rem)] bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-2xl flex flex-col">
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
             <div className="flex items-center gap-3">
@@ -151,32 +156,30 @@ export function ChatBot() {
           </div>
 
           {/* Input */}
-          <form onSubmit={sendMessage} className="p-4 border-t border-gray-200 dark:border-gray-700">
-            <div className="flex gap-2">
+          <form onSubmit={sendMessage} className="p-3 sm:p-4 border-t border-gray-200 dark:border-gray-700">
+            <div className="flex gap-1 sm:gap-2">
               <button
                 type="button"
-                className="p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                onClick={clearChat}
+                title="Clear chat history"
+                className="p-1.5 sm:p-2 text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors flex-shrink-0"
               >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
-                </svg>
+                <DeleteIcon size="size-4" extraClass="sm:size-6"/>
               </button>
               <input
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Ask something..."
-                className="flex-1 px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent"
+                className="flex-1 min-w-0 px-2 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent"
                 disabled={isLoading}
               />
               <button
                 type="submit"
                 disabled={!input.trim() || isLoading}
-                className="p-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="p-1.5 sm:p-2 rounded-lg bg-blue-700 text-white disabled:opacity-50 disabled:cursor-not-allowed flex-shrink-0"
               >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                </svg>
+                <SendIcon size="size-4" extraClass="sm:size-6"/>
               </button>
             </div>
           </form>
