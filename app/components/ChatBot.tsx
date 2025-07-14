@@ -5,6 +5,8 @@ import { useBot } from '../context/BotContext';
 import { SendIcon } from '../ui/icons/SendIcon';
 import { DeleteIcon } from '../ui/icons/DeleteIcon';
 import { ChatIcon } from '../ui/icons/ChatIcon';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -136,7 +138,50 @@ export function ChatBot() {
                       : 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100'
                   }`}
                 >
-                  <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                  {message.role === 'user' ? (
+                    <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                  ) : (
+                    <div className="text-sm prose prose-sm max-w-none dark:prose-invert prose-headings:text-gray-900 dark:prose-headings:text-gray-100 prose-p:text-gray-900 dark:prose-p:text-gray-100 prose-strong:text-gray-900 dark:prose-strong:text-gray-100 prose-code:text-gray-900 dark:prose-code:text-gray-100 prose-pre:bg-gray-200 dark:prose-pre:bg-gray-700">
+                      <ReactMarkdown 
+                        remarkPlugins={[remarkGfm]}
+                        components={{
+                          // Customize link styling
+                          a: (props) => (
+                            <a 
+                              {...props} 
+                              className="text-blue-600 dark:text-blue-400 hover:underline" 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                            />
+                          ),
+                          // Customize code block styling
+                          code: (props) => {
+                            const isInline = !props.className?.includes('language-');
+                            return isInline ? (
+                              <code 
+                                {...props} 
+                                className="bg-gray-200 dark:bg-gray-700 px-1 py-0.5 rounded text-sm"
+                              />
+                            ) : (
+                              <code 
+                                {...props} 
+                                className="block bg-gray-200 dark:bg-gray-700 p-2 rounded text-sm overflow-x-auto"
+                              />
+                            );
+                          },
+                          // Customize list styling
+                          ul: (props) => (
+                            <ul {...props} className="list-disc list-inside space-y-1" />
+                          ),
+                          ol: (props) => (
+                            <ol {...props} className="list-decimal list-inside space-y-1" />
+                          ),
+                        }}
+                      >
+                        {message.content}
+                      </ReactMarkdown>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
