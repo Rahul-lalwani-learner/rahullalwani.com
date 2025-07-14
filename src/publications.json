@@ -1,0 +1,44 @@
+{
+  "publications": [
+    {
+      "title": "Heart and Respiratory Sound Expert System",
+      "description": "Contributed a chapter on a system that detects heart and lung anomalies from auscultation sounds using machine learning. Published in a Scopus-indexed book.",
+      "type": "Book Chapter",
+      "publisher": "CRC Press (Taylor & Francis)",
+      "book": "Cardio-Respi Signal Processing",
+      "tags": ["Scopus", "Healthcare", "Audio", "Machine Learning"],
+      "links": [
+        {
+          "name": "Research Paper",
+          "href": "https://drive.google.com/file/d/13g6meuNjP0pDJRik_Ea1npV57_a-sTzZ/view?usp=sharing",
+          "icon": "document"
+        }
+      ]
+    },
+    {
+      "title": "Deepfake Detection: A Survey of Methods and Recent Advances",
+      "description": "Published a research paper surveying the state of deepfake detection technologies in a conference proceeding.",
+      "type": "Conference Paper",
+      "publisher": "ISCMCTR-2024",
+      "book": "Innovative Approaches in Engineering and Management",
+      "tags": ["Deepfake", "Survey", "Computer Vision", "Conference"],
+      "links": [
+        {
+          "name": "Publisher",
+          "href": "https://sites.google.com/mitsgwalior.in/iscmctr-2024",
+          "icon": "globe"
+        }, 
+        {
+          "name": "Paper",
+          "href": "https://drive.google.com/file/d/1bvDMjKoLXC33-2ByU07Rlxl-ybEnt5uL/view?usp=sharing",
+          "icon": "document"
+        }, 
+        {
+          "name": "Post",
+          "href": "https://www.linkedin.com/posts/itsrahullalwani_research-deepfakedetection-machinelearning-activity-7294694436666548226-k5sO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2GySsBjV6nZZMia9ZgINf0otHbSnXeMM4",
+          "icon": "linkedin"
+        }
+      ]
+    }
+  ]
+}

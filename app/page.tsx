@@ -1,6 +1,7 @@
 
 import type { Metadata } from 'next';
 import { MainSection } from './components/MainSection';
+import { ExperienceEducation } from './components/ExperienceEducation';
 import { FeaturedSection } from './components/FeaturedSection';
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white dark:bg-background-black transition-color duration-100">
       <MainSection />
+      <ExperienceEducation />
       <FeaturedSection />
     </main>
   );

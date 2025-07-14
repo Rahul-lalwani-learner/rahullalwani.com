@@ -28,9 +28,9 @@ export function MainSection() {
           </div>
 
           {/* Description */}
-          <div className="space-y-6">
-            <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-              Passionate about building intelligent systems and crafting seamless web experiences with expertise in artificial intelligence and web development.
+          <div className="space-y-8">
+            <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+              Passionate about AI and web development, blending intelligence with seamless user experiences. With a strong academic foundation, I secured <b>AIR 418 and AIR 421 in GATE 2025-24 (DA)</b>, showcasing my dedication and expertise in the field.
             </p>
             
             <div className="space-y-2">

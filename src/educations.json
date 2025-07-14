@@ -1,0 +1,38 @@
+{
+  "education": [
+    {
+      "name": "Madhav Institute of Technology & Science",
+      "href": "https://www.mitsgwalior.in",
+      "title": "B.Tech in Artificial Intelligence and Machine Learning",
+      "logo": "/mits.png",
+      "start": "Aug 2021",
+      "end": "May 2025",
+      "location": "Gwalior, India",
+      "description": [
+        "CPI: 9.0 CGPA",
+        "Coursework in AI, Deep Learning, Computer Vision, and NLP",
+        "Projects include Kidney Tumor Segmentation, SkimLit, and Audio Classification"
+      ], 
+      "links": [
+        {
+          "name": "BOS Member",
+          "href": "/BOSMember.jpeg",
+          "icon": "document"
+        }
+      ]
+    },
+    {
+      "name": "Kendriya Vidyalaya",
+      "href": "https://crpfneemuch.kvs.ac.in/",
+      "title": "Senior Secondary Education – PCM (Physics, Chemistry, Mathematics)",
+      "logo": "/kv.png",
+      "start": "Aug 2018",
+      "end": "May 2020",
+      "location": "Nimach, India",
+      "description": [
+        "Percentage: 86%",
+        "Completed 12th grade with Physics, Chemistry, and Mathematics as core subjects"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "experience": [
+    {
+      "name": "Linnaeus University",
+      "href": "https://lnu.se/en/",
+      "title": "Research Intern",
+      "logo": "/linnaeus.png",
+      "start": "Jan 2024",
+      "end": "Oct 2024",
+      "location": "V\u00e4xj\u00f6, Sweden",
+      "description": [
+        "Developed new architecture for kidney tumor diagnosis, achieved detection accuracy of 98%",
+        "Implemented nnUNet and DeepLab-UNet architectures, enhancing segmentation efficiency by 2%",
+        "Analyzed datasets such as Kits19 for precise diagnosis and recommendations"
+      ],
+      "links": [
+        {
+          "name": "Certificate",
+          "href": "/Linnaeus_Certificate.pdf",
+          "icon": "file"
+        }
+      ]
+    },
+    {
+      "name": "IHUB DivyaSampark, IIT Roorkee",
+      "href": "https://www.iitr.ac.in/centers/IHUB_Divya_Sampark_Centre.html",
+      "title": "Hackathon Chanakya UG Fellow",
+      "logo": "/iitr.png",
+      "start": "Jun 2023",
+      "end": "Oct 2023",
+      "location": "Roorkee, India",
+      "description": [
+        "Created a Heart and Respiratory Sound Expert System using deep learning, for better diagnosis of heart patients, achieving 86% accuracy with 1D CNNs",
+        "Trained CNN models on public datasets, reducing diagnostic errors by 5%"
+      ],
+      "links": [
+        {
+          "name": "Certificate",
+          "href": "/IITR_Certificate.pdf",
+          "icon": "document"
+        }
+      ]
+    },
+    {
+      "name": "Accenture India",
+      "href": "https://www.accenture.com/in-en",
+      "title": "Data & AI Intern",
+      "logo": "/accenture.png",
+      "start": "Feb 2025",
+      "end": "Jun 2025",
+      "location": "Hyderabad, Telangana, India",
+      "description": [
+        "Completed a data engineering internship at Accenture, focusing on Snowflake and Gen AI",
+        "Built dynamic stored procedures, automated data loading and warehouse scaling, and integrated AWS services with Snowflake",
+        "Contributed to a Gen AI project that mapped employee skills to job trends for internal career growth"
+      ],
+      "links": [
+        {
+          "name": "Certificate",
+          "href": "/Accenture_Certificate.pdf",
+          "icon": "document"
+        }
+      ]
+    }
+  ]
+}

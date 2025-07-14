@@ -4,7 +4,9 @@ import path from 'path';
 import matter from 'gray-matter';
 import { ProjectCard, cardProps } from './ProjectCard';
 import { Tag } from '../ui/cardTags';
+import { CardLink } from '../ui/cardLinks';
 import projectsData from '../../src/projects.json';
+import publicationsData from '../../src/publications.json';
 import { Calistoga } from "next/font/google"
 
 const giestCalistoga = Calistoga({
@@ -12,6 +14,7 @@ const giestCalistoga = Calistoga({
     weight: '400',
     subsets: ['latin'],
 })
+
 interface BlogPost {
   title: string;
   description: string;
@@ -21,6 +24,20 @@ interface BlogPost {
   featured: boolean;
   slug: string;
   readTime: string;
+}
+
+interface Publication {
+  title: string;
+  description: string;
+  type: string;
+  publisher: string;
+  book: string;
+  tags: string[];
+  links: {
+    name: string;
+    href: string;
+    icon: 'linkedin' | 'github' | 'mail' | 'globe' | 'resume' | 'document' | 'colab' | 'jupyter';
+  }[];
 }
 
 async function getFeaturedProjects(): Promise<cardProps[]> {
@@ -73,9 +90,24 @@ async function getFeaturedBlogPosts(): Promise<BlogPost[]> {
   }
 }
 
+async function getFeaturedPublications(): Promise<Publication[]> {
+  // Get all publications (since there are only 2, show both)
+  const publications = publicationsData.publications;
+  return publications.map(pub => ({
+    title: pub.title,
+    description: pub.description,
+    type: pub.type,
+    publisher: pub.publisher,
+    book: pub.book,
+    tags: pub.tags,
+    links: pub.links as Publication['links']
+  }));
+}
+
 export async function FeaturedSection() {
   const featuredProjects = await getFeaturedProjects();
   const recentPosts = await getFeaturedBlogPosts();
+  const featuredPublications = await getFeaturedPublications();
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
@@ -186,6 +218,65 @@ export async function FeaturedSection() {
                 </div>
               </article>
             </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Featured Publications Section */}
+      <section>
+        <div className="flex items-center justify-between mb-8">
+          <h2 className={"text-2xl font-bold text-black dark:text-white "+giestCalistoga.className}>
+            publications
+          </h2>
+        </div>
+
+        <div className="space-y-6">
+          {featuredPublications.map((pub, index) => (
+            <div key={index} className="p-6 bg-white dark:bg-background-black border border-light-border dark:border-hover-black rounded-lg transition-all duration-200 mb-2">
+              <div className="flex justify-between items-start gap-4">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                    {pub.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                    {pub.description}
+                  </p>
+                  
+                  {/* Tags */}
+                  {pub.tags && pub.tags.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mb-3">
+                      {pub.tags.slice(0, 4).map((tag, tagIndex) => (
+                        <Tag 
+                          key={tagIndex}
+                          name={tag}
+                        />
+                      ))}
+                      {pub.tags.length > 4 && (
+                        <Tag name={`+${pub.tags.length - 4} more`} />
+                      )}
+                    </div>
+                  )}
+
+                  {/* Type, Publisher and Book */}
+                  <div className="text-sm text-gray-500 dark:text-gray-500 mb-3">
+                    <p className="mb-1">{pub.type} &bull; {pub.publisher}</p>
+                    <p className="italic">Published in: {pub.book}</p>
+                  </div>
+
+                  {/* Links */}
+                  <div className="flex flex-wrap gap-2">
+                    {pub.links.map((link, linkIndex) => (
+                      <CardLink
+                        key={linkIndex}
+                        name={link.name}
+                        icon={link.icon}
+                        link={link.href}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </section>
