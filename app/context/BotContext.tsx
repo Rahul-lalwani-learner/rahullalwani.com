@@ -4,6 +4,10 @@ import { createContext, useContext, useEffect, useState, ReactNode } from 'react
 interface BotContextType {
   bot: boolean
   toggleBot: () => void
+  isChatOpen: boolean
+  openChat: () => void
+  closeChat: () => void
+  toggleChat: () => void
 }
 
 const BotContext = createContext<BotContextType | undefined>(undefined)
@@ -22,6 +26,7 @@ interface BotProviderProps {
 
 export function BotProvider({ children }: BotProviderProps) {
   const [bot, setBot] = useState<boolean>(true) // Default bot is true
+  const [isChatOpen, setIsChatOpen] = useState<boolean>(false) // Chat overlay state
   const [mounted, setMounted] = useState(false)
 
   // Get user's bot preference from localStorage
@@ -47,17 +52,36 @@ export function BotProvider({ children }: BotProviderProps) {
     setBot(prev => !prev)
   }
 
+  const openChat = () => {
+    setIsChatOpen(true)
+  }
+
+  const closeChat = () => {
+    setIsChatOpen(false)
+  }
+
+  const toggleChat = () => {
+    setIsChatOpen(prev => !prev)
+  }
+
   // Prevent hydration mismatch
   if (!mounted) {
     return (
-      <BotContext.Provider value={{ bot: true, toggleBot: () => {} }}>
+      <BotContext.Provider value={{ 
+        bot: true, 
+        toggleBot: () => {}, 
+        isChatOpen: false, 
+        openChat: () => {}, 
+        closeChat: () => {}, 
+        toggleChat: () => {} 
+      }}>
         {children}
       </BotContext.Provider>
     )
   }
 
   return (
-    <BotContext.Provider value={{ bot, toggleBot }}>
+    <BotContext.Provider value={{ bot, toggleBot, isChatOpen, openChat, closeChat, toggleChat }}>
       {children}
     </BotContext.Provider>
   )

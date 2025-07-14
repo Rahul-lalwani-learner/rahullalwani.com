@@ -5,6 +5,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 import { BotProvider } from "./context/BotContext";
 import { Footer } from "./components/Footer";
 import { NavBar } from "./components/Navbar";
+import { ChatBot } from "./components/ChatBot";
 
 const geistWorkSans = Work_Sans({
   variable: "--font-work-sans",
@@ -49,6 +50,7 @@ export default function RootLayout({
             <NavBar height="h-24"/>
             {children}
             <Footer height="h-42"/>
+            <ChatBot />
           </BotProvider>
         </ThemeProvider>
       </body>
