@@ -124,7 +124,7 @@ ${socials.map((social: Social) => `- ${social.name}: ${social.href}`).join('\n')
 
 Professional Summary: Backend by trade, full-stack by passion. Builds and self-hosts innovative web applications and AI solutions with expertise in modern web technologies and artificial intelligence.
 
-Resume: Available at /Rahul_resume2004.pdf
+Resume: Available at https://drive.google.com/file/d/1FNRUMVX6R386atI45sST4Aerrs9lykZ7/view?usp=sharing
 
 About: AI Developer passionate about creating intelligent web applications and solutions. Strong academic performance with top rankings in GATE examinations. Experienced in full-stack development, machine learning, and data science projects.
 

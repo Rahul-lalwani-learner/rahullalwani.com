@@ -55,7 +55,7 @@ export function MainSection() {
           <div className="flex flex-wrap gap-4">
             {/* Resume Button */}
             <Link
-              href="/Rahul_resume2004.pdf"
+              href="https://drive.google.com/file/d/1FNRUMVX6R386atI45sST4Aerrs9lykZ7/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 text-background-black dark:text-white bg-white font-bold text-sm dark:bg-background-black
