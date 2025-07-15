@@ -6,6 +6,7 @@ import { BotProvider } from "./context/BotContext";
 import { Footer } from "./components/Footer";
 import { NavBar } from "./components/Navbar";
 import { ChatBot } from "./components/ChatBot";
+import { ThemeScript } from "./components/ThemeScript";
 
 const geistWorkSans = Work_Sans({
   variable: "--font-work-sans",
@@ -40,13 +41,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body
-        className={`${geistWorkSans.className} ${geistSans.variable} ${geistMono.variable} antialiased dark:bg-background-black bg-white transition-all duration-100`}
+        className={`${geistWorkSans.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning={true}
       >
         <ThemeProvider>
           <BotProvider>
+            <ThemeScript />
             <NavBar height="h-24"/>
             {children}
             <Footer height="h-42"/>

@@ -64,22 +64,7 @@ export function BotProvider({ children }: BotProviderProps) {
     setIsChatOpen(prev => !prev)
   }
 
-  // Prevent hydration mismatch
-  if (!mounted) {
-    return (
-      <BotContext.Provider value={{ 
-        bot: true, 
-        toggleBot: () => {}, 
-        isChatOpen: false, 
-        openChat: () => {}, 
-        closeChat: () => {}, 
-        toggleChat: () => {} 
-      }}>
-        {children}
-      </BotContext.Provider>
-    )
-  }
-
+  // Always render with consistent state for SSR
   return (
     <BotContext.Provider value={{ bot, toggleBot, isChatOpen, openChat, closeChat, toggleChat }}>
       {children}

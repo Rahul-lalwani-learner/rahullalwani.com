@@ -6,6 +6,24 @@
   font-family: "Work Sans", sans-serif;
 }
 
+/* Default light theme styles for SSR */
+html {
+  background-color: white;
+  color: #000;
+}
+
+/* Dark theme styles */
+html.dark {
+  background-color: #030712;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+
 @theme{
   --color-gray-100: #f3f4f6;
   --color-gray-200: #6b7280;

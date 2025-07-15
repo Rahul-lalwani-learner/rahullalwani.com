@@ -127,6 +127,9 @@ Professional Summary: Backend by trade, full-stack by passion. Builds and self-h
 Resume: Available at /Rahul_resume2004.pdf
 
 About: AI Developer passionate about creating intelligent web applications and solutions. Strong academic performance with top rankings in GATE examinations. Experienced in full-stack development, machine learning, and data science projects.
+
+Rahul Lalwani is a dedicated problem solver with a strong grasp of Data Structures and Algorithms, as demonstrated by his LeetCode profile, where he has solved 593 problems across all difficulty levels—131 easy, 369 medium, and 93 hard—out of 3617 available. With a global rank of 102,486, he has made over 1,100 submissions in 2024 alone, maintaining a streak of 132 days and staying active for 303 days this year. Rahul has earned 16 badges, including the prestigious 365 Days Badge, reflecting his consistency and commitment. As a B.Tech student specializing in Artificial Intelligence and Machine Learning at Madhav Institute of Technology and Science, he combines academic knowledge with daily coding practice to continually sharpen his algorithmic thinking and problem-solving skills. 
+Leetcode profile link - https://leetcode.com/u/RahulLalwani/
 `;
 
     documents.push({

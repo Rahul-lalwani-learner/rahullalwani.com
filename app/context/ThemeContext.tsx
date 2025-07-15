@@ -6,6 +6,7 @@ type Theme = 'light' | 'dark'
 interface ThemeContextType {
   theme: Theme
   toggleTheme: () => void
+  mounted: boolean
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
@@ -23,7 +24,7 @@ interface ThemeProviderProps {
 }
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>('light')
+  const [theme, setTheme] = useState<Theme>('light') // Default to light for SSR
   const [mounted, setMounted] = useState(false)
 
   // Get user's default theme preference
@@ -56,14 +57,12 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
     setTheme(prev => prev === 'light' ? 'dark' : 'light')
   }
 
-  // Prevent flash of wrong theme
-  if (!mounted) {
-    return null
-  }
-
+  // Always render content, but apply theme classes after mount to prevent FOUC
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {children}
+    <ThemeContext.Provider value={{ theme, toggleTheme, mounted }}>
+      <div className={mounted ? theme : 'light'} style={{ transition: 'none' }}>
+        {children}
+      </div>
     </ThemeContext.Provider>
   )
 }
