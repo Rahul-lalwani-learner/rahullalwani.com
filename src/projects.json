@@ -17,6 +17,11 @@
           "name": "Source",
           "href": "https://github.com/Rahul-lalwani-learner/excalidraw-draw-app",
           "icon": "github"
+        }, 
+        {
+          "name": "Post",
+          "href": "https://www.linkedin.com/posts/itsrahullalwani_fullstackdevelopment-react-nextjs-activity-7349331017846915075-7DKk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2GySsBjV6nZZMia9ZgINf0otHbSnXeMM4",
+          "icon": "linkedin"
         }
       ]
     },
