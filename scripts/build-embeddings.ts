@@ -58,6 +58,11 @@ async function buildEmbeddings() {
     
     console.log('✅ Connected to existing collection');
     
+    // Clear existing embeddings first
+    console.log('🗑️  Clearing existing embeddings...');
+    const deleteResult = await collection.deleteMany({});
+    console.log(`✅ Cleared ${deleteResult.deletedCount} existing embeddings`);
+    
     // Continue with data processing...
     const dataDir = path.join(process.cwd(), 'src');
     
@@ -124,9 +129,11 @@ ${socials.map((social: Social) => `- ${social.name}: ${social.href}`).join('\n')
 
 Professional Summary: Backend by trade, full-stack by passion. Builds and self-hosts innovative web applications and AI solutions with expertise in modern web technologies and artificial intelligence.
 
+Current Learning & Development: Currently learning Web3 technologies and working on integrating Web3 with traditional web development. Exploring blockchain development, smart contracts, and decentralized applications (dApps) to bridge the gap between conventional web technologies and the decentralized web.
+
 Resume: Available at https://drive.google.com/file/d/1FNRUMVX6R386atI45sST4Aerrs9lykZ7/view?usp=sharing
 
-About: AI Developer passionate about creating intelligent web applications and solutions. Strong academic performance with top rankings in GATE examinations. Experienced in full-stack development, machine learning, and data science projects.
+About: AI Developer passionate about creating intelligent web applications and solutions. Strong academic performance with top rankings in GATE examinations. Experienced in full-stack development, machine learning, and data science projects. Currently expanding expertise into Web3 and blockchain technologies.
 
 Rahul Lalwani is a dedicated problem solver with a strong grasp of Data Structures and Algorithms, as demonstrated by his LeetCode profile, where he has solved 593 problems across all difficulty levels—131 easy, 369 medium, and 93 hard—out of 3617 available. With a global rank of 102,486, he has made over 1,100 submissions in 2024 alone, maintaining a streak of 132 days and staying active for 303 days this year. Rahul has earned 16 badges, including the prestigious 365 Days Badge, reflecting his consistency and commitment. As a B.Tech student specializing in Artificial Intelligence and Machine Learning at Madhav Institute of Technology and Science, he combines academic knowledge with daily coding practice to continually sharpen his algorithmic thinking and problem-solving skills. 
 Leetcode profile link - https://leetcode.com/u/RahulLalwani/
