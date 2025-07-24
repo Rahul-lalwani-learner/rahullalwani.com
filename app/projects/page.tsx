@@ -26,10 +26,10 @@ export default function Projects(){
             <h1 className={`font-bold text-5xl dark:text-white ${giestCalistoga.className} mb-8`}>My Projects</h1>
             
             {/* Category Tabs */}
-            <div className="flex justify-between bg-gray-100 dark:bg-gray-800 rounded-lg p-2 mb-8 w-full sm:max-w-fit sm:mx-0 sm:justify-start">
+            <div className="grid grid-cols-4 gap-1 sm:gap-2 sm:flex sm:justify-start bg-gray-100 dark:bg-gray-800 rounded-lg p-2 mb-8 w-full sm:max-w-fit sm:mx-0">
                 <button
                     onClick={() => setActiveCategory('ALL')}
-                    className={`px-2 py-2 sm:px-4 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer ${
+                    className={`px-2 py-2 sm:px-4 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer w-full sm:w-auto text-center ${
                         activeCategory === 'ALL'
                             ? 'bg-white dark:bg-background-black text-black dark:text-white shadow-sm'
                             : 'text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white'
@@ -39,7 +39,7 @@ export default function Projects(){
                 </button>
                 <button
                     onClick={() => setActiveCategory('AI/ML/DL')}
-                    className={`px-2 py-2 sm:px-4 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer ${
+                    className={`px-1 py-2 sm:px-4 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer w-full sm:w-auto text-center ${
                         activeCategory === 'AI/ML/DL'
                             ? 'bg-white dark:bg-background-black text-black dark:text-white shadow-sm'
                             : 'text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white'
@@ -49,7 +49,7 @@ export default function Projects(){
                 </button>
                 <button
                     onClick={() => setActiveCategory('WebDev')}
-                    className={`px-2 py-2 sm:px-4 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer ${
+                    className={`px-2 py-2 sm:px-4 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer w-full sm:w-auto text-center ${
                         activeCategory === 'WebDev'
                             ? 'bg-white dark:bg-background-black text-black dark:text-white shadow-sm'
                             : 'text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white'
@@ -59,7 +59,7 @@ export default function Projects(){
                 </button>
                 <button
                     onClick={() => setActiveCategory('Web3')}
-                    className={`px-2 py-2 sm:px-4 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer ${
+                    className={`px-2 py-2 sm:px-4 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer w-full sm:w-auto text-center ${
                         activeCategory === 'Web3'
                             ? 'bg-white dark:bg-background-black text-black dark:text-white shadow-sm'
                             : 'text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white'
