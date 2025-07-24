@@ -93,7 +93,7 @@ export async function getCachedResponse(key: string): Promise<string | null> {
   }
 }
 
-export async function setCachedResponse(key: string, response: string, ttlSeconds: number = 3600): Promise<void> {
+export async function setCachedResponse(key: string, response: string, ttlSeconds: number = 86400): Promise<void> {
   // Use memory cache if enabled
   if (useMemoryCache) {
     setInMemoryCache(key, response, ttlSeconds);

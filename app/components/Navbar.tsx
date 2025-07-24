@@ -24,11 +24,11 @@ export function NavBar({ height }: NavBarProps){
                 <button onClick = {()=>{router.push('/blog')}} className="p-2 hover:text-black focus:text-black dark:focus:text-white dark:text-gray-700 dark:hover:text-white text-gray-200 transition-colors cursor-pointer">blog</button>
                 <button onClick = {()=>{router.push('/contact')}} className="p-2 hover:text-black focus:text-black dark:focus:text-white dark:text-gray-700 dark:hover:text-white text-gray-200 transition-colors cursor-pointer">contact</button>
             </div>
-            <div className="flex sm:w-20 w-18 justify-between">
-                <div onClick={toggleBot} className="p-2 hover:bg-gray-100 dark:hover:bg-hover-black rounded-md transition-all duration-100 cursor-pointer dark:text-white text-black">
+            <div className="flex sm:w-20 w-14 justify-between">
+                <div onClick={toggleBot} className="p-1 sm:p-2 hover:bg-gray-100 dark:hover:bg-hover-black rounded-md transition-all duration-100 cursor-pointer dark:text-white text-black">
                     {bot ? <BotOn extraClass="sm:size-5 size-4"/> : <BotOff extraClass="sm:size-5 size-4"/>}
                 </div>
-                <div onClick={toggleTheme} className="p-2 hover:bg-gray-100 dark:hover:bg-hover-black rounded-md transition-all duration-100 cursor-pointer">
+                <div onClick={toggleTheme} className="p-1 sm:p-2 hover:bg-gray-100 dark:hover:bg-hover-black rounded-md transition-all duration-100 cursor-pointer">
                     {theme === 'dark' ? <SunIcon extraClass="text-yellow-500 sm:size-5 size-4"/> : <MoonIcon extraClass="text-purple-700 sm:size-5 size-4"/>}
                 </div>
             </div>

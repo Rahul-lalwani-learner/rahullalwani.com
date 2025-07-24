@@ -11,7 +11,7 @@
         "React",
         "PostgreSQL"
       ],
-      "type": "Web App",
+      "type": "WebDev",
       "links": [
         {
           "name": "Source",
@@ -63,7 +63,7 @@
         "TailwindCSS",
         "TypeScript"
       ],
-      "type": "Web App",
+      "type": "WebDev",
       "links": [
         {
           "name": "Source (Backend)",
@@ -81,6 +81,33 @@
           "icon": "linkedin"
         }
         
+      ]
+    },
+    {
+      "name": "Crypto Wallet Application",
+      "description": "A secure Solana wallet manager with mnemonic seed phrase generation, multi-wallet derivation, balance fetching via Alchemy API, and responsive UI built with Next.js.",
+      "image": "/crypto-wallet.png",
+      "tags": [
+        "Next.js",
+        "Solana",
+        "Web3.js",
+        "Alchemy API",
+        "BIP39",
+        "Tailwind CSS",
+        "Cryptocurrency"
+      ],
+      "type": "Web3",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Rahul-lalwani-learner/Crypto-wallet-with-rpc",
+          "icon": "github"
+        }, 
+        {
+          "name": "Website",
+          "href": "https://solana-wallet.rahullalwani.com/",
+          "icon": "globe"
+        }
       ]
     },
     {
@@ -134,7 +161,7 @@
         "MiSCNN",
         "TotalSegmentator"
       ],
-      "type": "Computer Vision",
+      "type": "AI/ML/DL",
       "links": [
         {
           "name": "DriveLink",
@@ -153,7 +180,7 @@
         "Hackathon", 
         "IITRoorkee"
       ],
-      "type": "Hackathon / Research",
+      "type": "AI/ML/DL",
       "links": [
         {
           "name": "Source",
@@ -172,7 +199,7 @@
         "Biometrics",
         "Computer Vision"
       ],
-      "type": "Computer Vision",
+      "type": "AI/ML/DL",
       "links": [
         {
           "name": "Source",
@@ -215,7 +242,7 @@
         "Computer Vision",
         "Object Detection"
       ],
-      "type": "Computer Vision",
+      "type": "AI/ML/DL",
       "links": [
         {
           "name": "Source",
@@ -233,7 +260,7 @@
         "Computer Vision",
         "Analytics"
       ],
-      "type": "Computer Vision",
+      "type": "AI/ML/DL",
       "links": [
         {
           "name": "Source",
@@ -251,7 +278,7 @@
         "Safety",
         "Computer Vision"
       ],
-      "type": "Computer Vision",
+      "type": "AI/ML/DL",
       "links": [
         {
           "name": "Source",
@@ -270,7 +297,7 @@
         "Object Detection",
         "Card Games"
       ],
-      "type": "Computer Vision",
+      "type": "AI/ML/DL",
       "links": [
         {
           "name": "Source",
@@ -342,7 +369,7 @@
         "Transformer",
         "Vision Transformer"
       ],
-      "type": "Hackathon / Research",
+      "type": "AI/ML/DL",
       "links": [
         {
           "name": "Source",
@@ -366,7 +393,7 @@
         "Express",
         "Web App"
       ],
-      "type": "Web App",
+      "type": "WebDev",
       "links": [
         {
           "name": "Source",

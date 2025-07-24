@@ -11,9 +11,10 @@ export interface cardProps{
         name: string, 
         href: string, 
         icon: 'linkedin' | 'github' | 'mail' | 'globe' | 'resume'  | 'document' | 'colab' | 'jupyter'
-    }[]
+    }[],
+    priority?: boolean
 }
-export function ProjectCard({name, description, image, tags , links}: cardProps){
+export function ProjectCard({name, description, image, tags , links, priority = false}: cardProps){
     return <div className="max-w-[360px] w-full px-8 py-8 flex flex-col gap-2 border dark:border-hover-black border-light-border rounded-lg shadow-lg">
         <div className='max-w-2xs h-42 flex overflow-hidden m-auto rounded-sm'>
             <Image 
@@ -22,6 +23,7 @@ export function ProjectCard({name, description, image, tags , links}: cardProps)
             width={300} 
             height={500} 
             className="object-cover h-full w-full  object-bottom" 
+            priority={priority}
             />
         </div>
         <div className='pt-2 text-xl font-bold text-background-black dark:text-white tracking-tight'>
