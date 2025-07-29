@@ -66,6 +66,11 @@
       "type": "WebDev",
       "links": [
         {
+          "name": "Visit",
+          "href": "https://extramemory.rahullalwani.com/",
+          "icon": "globe"
+        },
+        {
           "name": "Source (Backend)",
           "href": "https://github.com/Rahul-lalwani-learner/Extra-memory-app",
           "icon": "github"
@@ -104,7 +109,7 @@
           "icon": "github"
         }, 
         {
-          "name": "Website",
+          "name": "Visit",
           "href": "https://solana-wallet.rahullalwani.com/",
           "icon": "globe"
         }
