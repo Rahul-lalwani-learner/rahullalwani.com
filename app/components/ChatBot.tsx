@@ -80,7 +80,7 @@ export function ChatBot() {
       {!isChatOpen && (
         <button
           onClick={openChat}
-          className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-black dark:bg-white text-white dark:text-black p-3 sm:p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 cursor-pointer"
+          className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-black dark:bg-white text-white dark:text-black p-3 sm:p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 cursor-pointer animate-pulse"
         >
           <ChatIcon size='size-6'/>
         </button>
