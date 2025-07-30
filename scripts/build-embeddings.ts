@@ -131,7 +131,7 @@ Professional Summary: Backend by trade, full-stack by passion. Builds and self-h
 
 Current Learning & Development: Currently learning Web3 technologies and working on integrating Web3 with traditional web development. Exploring blockchain development, smart contracts, and decentralized applications (dApps) to bridge the gap between conventional web technologies and the decentralized web.
 
-Resume: Available at https://drive.google.com/file/d/1FNRUMVX6R386atI45sST4Aerrs9lykZ7/view?usp=sharing
+Resume: Available at https://drive.google.com/file/d/11o8Jb7_n45t4V9yYen1i_QaxN7IURQsb/view?usp=sharing, 
 
 About: AI Developer passionate about creating intelligent web applications and solutions. Strong academic performance with top rankings in GATE examinations. Experienced in full-stack development, machine learning, and data science projects. Currently expanding expertise into Web3 and blockchain technologies.
 
