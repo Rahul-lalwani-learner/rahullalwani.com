@@ -8,6 +8,7 @@ import { NavBar } from "./components/Navbar";
 import { ChatBot } from "./components/ChatBot";
 import { ThemeScript } from "./components/ThemeScript";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistWorkSans = Work_Sans({
   variable: "--font-work-sans",
@@ -55,6 +56,7 @@ export default function RootLayout({
             <Footer height="h-42"/>
             <ChatBot />
             <Analytics/>
+            <SpeedInsights/>
           </BotProvider>
         </ThemeProvider>
       </body>
