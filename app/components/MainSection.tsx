@@ -80,10 +80,14 @@ export function MainSection() {
             {/* Social Links - Icon Only Format like Footer */}
             {socialsData.socials.map((social) => {
               const IconComponent = iconComponents[social.icon as keyof typeof iconComponents];
+              const href =
+                social.name === "GitHub"
+                  ? "https://github.com/Rahul-lalwani-learner/rahullalwani.com"
+                  : social.href;
               return (
                 <a
                   key={social.name}
-                  href={social.href}
+                  href={href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-10 h-10 hover:text-black dark:text-gray-700 dark:hover:text-white text-gray-200 bg-gray-background dark:bg-[#1a2230] rounded-lg transition-colors border border-light-border dark:border-hover-black"

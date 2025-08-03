@@ -1,6 +1,35 @@
 {
   "projects": [
     {
+      "name": "Multi-Chain Crypto Wallet (Solana & Ethereum)",
+      "description": "Multi-chain crypto wallet built with Next.js, supporting Solana and Ethereum. Uses BIP39 mnemonics and BIP44 derivation for secure key management.",
+      "image": "/multi-chain-wallet.png",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Solana",
+        "Ethereum",
+        "Web3.js",
+        "Ethers.js",
+        "BIP39",
+        "Cryptography",
+        "Multi-Chain"
+      ],
+      "type": "Web3",
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://wallet.rahullalwani.com",
+          "icon": "globe"
+        }, 
+        {
+          "name": "Source",
+          "href": "https://github.com/Rahul-lalwani-learner/Multi-chain-wallet",
+          "icon": "github"
+        }
+      ]
+    },
+    {
       "name": "ExcaliDraw \u2013 Collaborative Drawing & Chat App",
       "description": "Real-time collaborative drawing app with WebSocket-powered chat, built using Next.js, React, and Prisma.",
       "image": "/excalidraw.png",
@@ -9,7 +38,8 @@
         "WebSocket",
         "Prisma",
         "React",
-        "PostgreSQL"
+        "PostgreSQL", 
+        "TurboRepo"
       ],
       "type": "WebDev",
       "links": [
@@ -89,7 +119,7 @@
       ]
     },
     {
-      "name": "Crypto Wallet Application",
+      "name": "Basic Solana Wallet",
       "description": "A secure Solana wallet manager with mnemonic seed phrase generation, multi-wallet derivation, balance fetching via Alchemy API, and responsive UI built with Next.js.",
       "image": "/crypto-wallet.png",
       "tags": [
