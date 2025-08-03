@@ -1,8 +1,12 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import socialsData from "../../src/socials.json";
 import { iconComponents } from "../ui/icons/iconsType";
 import { Calistoga } from 'next/font/google';
+import { useBot } from '../context/BotContext';
+import { BottomRightArrowIcon } from '../ui/icons/BottomRightArrow';
 
 const giestCalistoga = Calistoga({
     variable: "--font-calistoga",
@@ -11,6 +15,8 @@ const giestCalistoga = Calistoga({
 })
 
 export function MainSection() {
+  const { openChat } = useBot();
+
   return (
     <div className="max-w-3xl m-auto p-4 pt-8">
       <div className="flex flex-col-reverse lg:flex-row items-start gap-12">
@@ -34,13 +40,16 @@ export function MainSection() {
             </p>
             
             <div className="space-y-2">
-              <p className="text-gray-600 dark:text-gray-400">
-                For Q&A, raise a ticket with{' '}
-                <Link href="/contact" className="text-blue-600 dark:text-blue-400 hover:underline">
-                  Contact Support
-                </Link>{' '}
-                ↗
-              </p>
+                <p className="text-gray-600 dark:text-gray-400 flex items-center gap-1">
+                Have questions? Chat with{' '}
+                <button 
+                  onClick={openChat} 
+                  className="text-blue-600 dark:text-blue-400 hover:underline cursor-pointer bg-transparent border-none p-0 font-inherit"
+                >
+                  Rahul Support
+                </button>
+                <BottomRightArrowIcon />
+                </p>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
                 For escalations, please find my{' '}
                 <Link href="/projects" className="text-blue-600 dark:text-blue-400 hover:underline">
