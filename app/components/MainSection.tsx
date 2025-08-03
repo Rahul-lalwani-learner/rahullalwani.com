@@ -40,15 +40,17 @@ export function MainSection() {
             </p>
             
             <div className="space-y-2">
-                <p className="text-gray-600 dark:text-gray-400 flex items-center gap-1">
+                <p className="text-gray-600 dark:text-gray-400">
                 Have questions? Chat with{' '}
-                <button 
-                  onClick={openChat} 
-                  className="text-blue-600 dark:text-blue-400 hover:underline cursor-pointer bg-transparent border-none p-0 font-inherit"
-                >
-                  Rahul Support
-                </button>
-                <BottomRightArrowIcon />
+                <span className="inline-flex items-center gap-1">
+                    <button 
+                    onClick={openChat} 
+                    className="text-blue-600 dark:text-blue-400 hover:underline cursor-pointer bg-transparent border-none p-0 font-inherit"
+                    >
+                    Rahul Support
+                    </button>
+                  <BottomRightArrowIcon />
+                </span>
                 </p>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
                 For escalations, please find my{' '}
