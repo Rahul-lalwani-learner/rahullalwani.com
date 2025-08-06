@@ -437,6 +437,62 @@
         }
       ]
     }
-    
+    ,
+    {
+      "name": "RSOL - Centralized Liquid Staking Platform",
+      "description": "Centralized liquid staking platform for Solana Devnet. Stake SOL for RSOL tokens at flexible ratios, with real-time monitoring and secure, ratio-based unstaking.",
+      "image": "/lst.png",
+      "tags": [
+        "Next.js",
+        "Solana",
+        "Web3.js",
+        "SPL Token",
+        "Helius Webhooks",
+        "TypeScript",
+        "Tailwind CSS",
+        "DeFi"
+      ],
+      "type": "Web3",
+      "links": [
+        {
+          "name": "Visit",
+          "href": "https://lst-sample.rahullalwani.com/",
+          "icon": "globe"
+        },
+        {
+          "name": "Source",
+          "href": "https://github.com/Rahul-lalwani-learner/Centralized-LST",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "SolLaunch - Solana Token Launchpad",
+      "description": "User-friendly launchpad for creating and minting SPL tokens on Solana. Features instant minting, multi-network support, wallet integration, and a modern UI.",
+      "image": "/launchpad.png",
+      "tags": [
+        "Next.js",
+        "Solana",
+        "Web3.js",
+        "SPL Token",
+        "Wallet Adapter",
+        "Tailwind CSS",
+        "TypeScript",
+        "Launchpad"
+      ],
+      "type": "Web3",
+      "links": [
+        {
+          "name": "Visit",
+          "href": "https://launchpad.rahullalwani.com/",
+          "icon": "globe"
+        },
+        {
+          "name": "Source",
+          "href": "https://github.com/Rahul-lalwani-learner/token-lanchpad-with-token-mint",
+          "icon": "github"
+        }
+      ]
+    }
   ]
 }
