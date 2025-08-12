@@ -83,7 +83,7 @@ const skills: Skill[] = [
 
 export function SkillsSection() {
   return (
-    <section className="max-w-3xl m-auto p-4 py-16">
+    <section className="max-w-3xl m-auto p-4 md:py-16 py-8">
       <div className="space-y-12">
         {/* Section Header */}
         <div className="text-center">
