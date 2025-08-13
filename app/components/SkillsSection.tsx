@@ -1,5 +1,6 @@
 'use client';
 
+import React, { useState, useRef, useEffect } from 'react';
 import { 
   SiTypescript, SiJavascript, SiPython, SiNextdotjs, SiReact, 
   SiNodedotjs, SiTailwindcss, SiMongodb, SiPostgresql, SiMysql,
@@ -82,6 +83,49 @@ const skills: Skill[] = [
 ];
 
 export function SkillsSection() {
+  const [activeSkill, setActiveSkill] = useState<string | null>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Hide tooltip on click outside (for mobile)
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (gridRef.current && !gridRef.current.contains(e.target as Node)) {
+        setActiveSkill(null);
+        if (timeoutRef.current) {
+          clearTimeout(timeoutRef.current);
+          timeoutRef.current = null;
+        }
+      }
+    }
+    document.addEventListener('click', handleClick);
+    return () => document.removeEventListener('click', handleClick);
+  }, []);
+
+  // Auto-hide tooltip after 2 seconds on mobile
+  useEffect(() => {
+    if (activeSkill && typeof window !== 'undefined' && window.innerWidth < 768) {
+      // Clear existing timeout
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+      
+      // Set new timeout to hide after 2 seconds
+      timeoutRef.current = setTimeout(() => {
+        setActiveSkill(null);
+        timeoutRef.current = null;
+      }, 2000);
+    }
+
+    // Cleanup timeout on unmount
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+        timeoutRef.current = null;
+      }
+    };
+  }, [activeSkill]);
+
   return (
     <section className="max-w-3xl m-auto p-4 md:py-16 py-8">
       <div className="space-y-12">
@@ -102,13 +146,22 @@ export function SkillsSection() {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-6 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12 md:gap-6 gap-2 place-items-center">
+        <div ref={gridRef} className="grid grid-cols-6 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12 md:gap-6 gap-2 place-items-center">
           {skills.map((skill) => {
             const IconComponent = skill.icon;
+            // Show tooltip if hovered (desktop) or tapped (mobile)
+            const showTooltip = activeSkill === skill.name;
             return (
               <div
                 key={skill.name}
                 className="group relative flex items-center justify-center"
+                onClick={e => {
+                  // Only handle on mobile
+                  if (window.innerWidth < 768) {
+                    e.stopPropagation();
+                    setActiveSkill(activeSkill === skill.name ? null : skill.name);
+                  }
+                }}
               >
                 {/* Icon Container */}
                 <div className={`w-12 h-12 flex items-center justify-center rounded-lg 
@@ -130,12 +183,16 @@ export function SkillsSection() {
                   <div className="absolute -top-1 -right-1 w-3 h-3 bg-blue-500 rounded-full border-2 border-white dark:border-gray-900"></div>
                 )}
 
-                {/* Tooltip */}
-                <div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2
-                              opacity-0 group-hover:opacity-100 transition-opacity duration-200
-                              bg-black dark:bg-white text-white dark:text-black
-                              text-xs py-1 px-2 rounded whitespace-nowrap pointer-events-none
-                              z-10">
+                {/* Tooltip: show on hover (desktop) or tap (mobile) */}
+                <div
+                  className={`absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2
+                    bg-black dark:bg-white text-white dark:text-black
+                    text-xs py-1 px-2 rounded whitespace-nowrap pointer-events-none z-10
+                    ${showTooltip ? 'opacity-100' : 'opacity-0'}
+                    group-hover:opacity-100 transition-opacity duration-200
+                  `}
+                  style={{ pointerEvents: 'auto' }}
+                >
                   {skill.name}
                   {skill.primary && <span className="text-blue-300 dark:text-blue-600"> ★</span>}
                   <div className="absolute top-full left-1/2 transform -translate-x-1/2
