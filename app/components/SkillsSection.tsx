@@ -6,9 +6,8 @@ import {
   SiNodedotjs, SiTailwindcss, SiMongodb, SiPostgresql, SiMysql,
   SiTensorflow, SiPytorch, SiOpencv, SiSolana, SiEthereum,
   SiGit, SiDocker, SiVercel, SiPrisma,
-  SiExpress, SiStreamlit, SiJupyter, SiGithub,
-  SiWebrtc, SiSocketdotio, SiRedis, SiNumpy, SiPandas,
-  SiScikitlearn, SiKubernetes, SiPostman, SiTurborepo
+  SiExpress, SiStreamlit, SiJupyter, SiGithub, SiSocketdotio, SiRedis, SiNumpy, SiPandas,
+  SiScikitlearn, SiKubernetes, SiPostman, SiTurborepo, SiLangchain, SiHuggingface
 } from 'react-icons/si';
 import { FaJava, FaAws } from 'react-icons/fa';
 import { VscVscode } from 'react-icons/vsc';
@@ -59,7 +58,8 @@ const skills: Skill[] = [
   { name: 'Scikit-learn', icon: SiScikitlearn, category: 'ai', primary: true },
   { name: 'Streamlit', icon: SiStreamlit, category: 'ai', primary: true },
   { name: 'Jupyter', icon: SiJupyter, category: 'ai', primary: true },
-  
+  { name: 'LangChain', icon: SiLangchain, category: 'ai', primary: true },
+  { name: 'Hugging Face', icon: SiHuggingface, category: 'ai', primary: true },
   // Web3/Blockchain
   { name: 'Solana', icon: SiSolana, category: 'web3' },
   { name: 'Ethereum', icon: SiEthereum, category: 'web3' },
@@ -79,7 +79,7 @@ const skills: Skill[] = [
   
   // Real-time Technologies
   { name: 'Socket.io', icon: SiSocketdotio, category: 'realtime' },
-  { name: 'WebRTC', icon: SiWebrtc, category: 'realtime' },
+  // { name: 'WebRTC', icon: SiWebrtc, category: 'realtime' },
 ];
 
 export function SkillsSection() {
