@@ -56,6 +56,39 @@
       ]
     },
     {
+      "name": "Multi-Agent Research Assistant",
+      "description": "Modern multi-agent research assistant built with Streamlit, LangChain, Google Gemini, ChromaDB, and PostgreSQL. Fetches, stores, analyzes, and synthesizes research papers with RAG and agent workflows.",
+      "image": "/multi-agent-research.png",
+      "tags": [
+        "Streamlit",
+        "LangChain",
+        "Google Gemini",
+        "ChromaDB",
+        "PostgreSQL",
+        "PyMuPDF",
+        "RAG",
+        "LLM Agents"
+      ],
+      "type": "AI/ML/DL",
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://multiresearch.streamlit.app/",
+          "icon": "globe"
+        },
+        {
+          "name": "Source",
+          "href": "https://github.com/Rahul-lalwani-learner/multi-agent-research-agent",
+          "icon": "github"
+        }, 
+        {
+          "name": "Post",
+          "href": "https://www.linkedin.com/posts/itsrahullalwani_just-wrapped-up-a-project-ive-been-working-activity-7364712048288526336-PWIt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2GySsBjV6nZZMia9ZgINf0otHbSnXeMM4",
+          "icon": "linkedin"
+        }
+      ]
+    },
+    {
       "name": "Heart and Respiratory Sound Expert System",
     "description": "AI system for detecting heart and lung anomalies from auscultation sounds with a clinical interface.",
       "image": "/heart-respiratory-sound.png",
