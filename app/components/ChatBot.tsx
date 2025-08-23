@@ -19,6 +19,7 @@ export function ChatBot() {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -28,6 +29,24 @@ export function ChatBot() {
     scrollToBottom();
   }, [messages]);
 
+  // Focus input when loading completes
+  useEffect(() => {
+    if (!isLoading && inputRef.current) {
+      setTimeout(() => {
+        inputRef.current?.focus();
+      }, 50);
+    }
+  }, [isLoading]);
+
+  // Focus input when chat opens
+  useEffect(() => {
+    if (isChatOpen && inputRef.current) {
+      setTimeout(() => {
+        inputRef.current?.focus();
+      }, 100);
+    }
+  }, [isChatOpen]);
+
   const sendMessage = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || isLoading) return;
@@ -36,6 +55,8 @@ export function ChatBot() {
     setMessages(prev => [...prev, userMessage]);
     setInput('');
     setIsLoading(true);
+
+    
 
     try {
       const response = await fetch('/api/chat', {
@@ -65,6 +86,14 @@ export function ChatBot() {
     } finally {
       setIsLoading(false);
     }
+    
+    // Focus back to input after sending message - use a longer delay to ensure DOM is updated
+    setTimeout(() => {
+      if (inputRef.current) {
+        inputRef.current.focus();
+        inputRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }, 100);
   };
 
   const clearChat = () => {
@@ -212,6 +241,7 @@ export function ChatBot() {
                 <DeleteIcon size="size-4" extraClass="sm:size-6"/>
               </button>
               <input
+                ref={inputRef}
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
