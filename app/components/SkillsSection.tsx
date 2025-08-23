@@ -187,11 +187,10 @@ export function SkillsSection() {
                 <div
                   className={`absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2
                     bg-black dark:bg-white text-white dark:text-black
-                    text-xs py-1 px-2 rounded whitespace-nowrap pointer-events-none z-10
-                    ${showTooltip ? 'opacity-100' : 'opacity-0'}
-                    group-hover:opacity-100 transition-opacity duration-200
+                    text-xs py-1 px-2 rounded whitespace-nowrap z-10
+                    ${showTooltip ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}
+                    group-hover:opacity-100 group-hover:visible transition-all duration-200
                   `}
-                  style={{ pointerEvents: 'auto' }}
                 >
                   {skill.name}
                   {skill.primary && <span className="text-blue-300 dark:text-blue-600"> ★</span>}
