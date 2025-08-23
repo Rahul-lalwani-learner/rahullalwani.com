@@ -151,12 +151,12 @@ export function ChatBot() {
         <div className={`fixed bottom-20 right-2 sm:bottom-24 sm:right-6 z-50 transition-opacity duration-300 ${tooltipVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div 
             onClick={handleTooltipClick}
-            className={`relative bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-4 py-2 rounded-lg shadow-lg border border-gray-200 dark:border-gray-600 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 max-w-[calc(100vw-1rem)] sm:max-w-xs transform ${tooltipVisible ? 'translate-y-0 scale-100' : 'translate-y-2 scale-95'}`}
+            className={`relative bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-4 py-2 rounded-lg shadow-lg border border-gray-200 dark:border-gray-600 cursor-pointer  transition-all duration-200 max-w-[calc(100vw-1rem)] sm:max-w-xs transform ${tooltipVisible ? 'translate-y-0 scale-100' : 'translate-y-2 scale-95'}`}
           >
             <p className="text-sm whitespace-nowrap">{suggestedMessage}</p>
             
             {/* Tooltip Arrow - positioned at the right end */}
-            <div className="absolute top-full right-7">
+            <div className="absolute top-full sm:right-6 right-7">
               <div className="w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-white dark:border-t-gray-800"></div>
               <div className="absolute -top-px left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-200 dark:border-t-gray-600"></div>
             </div>
