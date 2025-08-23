@@ -148,15 +148,15 @@ export function ChatBot() {
     <>
       {/* Tooltip Popup */}
       {!isChatOpen && showTooltip && (
-        <div className={`fixed bottom-20 right-4 sm:bottom-24 sm:right-6 z-50 transition-opacity duration-300 ${tooltipVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`fixed bottom-20 right-2 sm:bottom-24 sm:right-6 z-50 transition-opacity duration-300 ${tooltipVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div 
             onClick={handleTooltipClick}
-            className={`relative bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-4 py-2 rounded-lg shadow-lg border border-gray-200 dark:border-gray-600 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 max-w-xs transform ${tooltipVisible ? 'translate-y-0 scale-100' : 'translate-y-2 scale-95'}`}
+            className={`relative bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-4 py-2 rounded-lg shadow-lg border border-gray-200 dark:border-gray-600 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 max-w-[calc(100vw-1rem)] sm:max-w-xs transform ${tooltipVisible ? 'translate-y-0 scale-100' : 'translate-y-2 scale-95'}`}
           >
             <p className="text-sm whitespace-nowrap">{suggestedMessage}</p>
             
             {/* Tooltip Arrow - positioned at the right end */}
-            <div className="absolute top-full right-6">
+            <div className="absolute top-full right-7">
               <div className="w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-white dark:border-t-gray-800"></div>
               <div className="absolute -top-px left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-200 dark:border-t-gray-600"></div>
             </div>
@@ -190,7 +190,7 @@ export function ChatBot() {
 
       {/* Chat Window */}
       {isChatOpen && (
-        <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-72 sm:w-80 md:w-96 h-[500px] max-h-[calc(100vh-2rem)] bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-2xl flex flex-col">
+        <div className="fixed bottom-4 right-2 sm:right-4 sm:bottom-6 sm:right-6 z-50 w-[calc(100vw-1rem)] max-w-72 sm:max-w-80 md:max-w-96 h-[500px] max-h-[calc(100vh-2rem)] bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-2xl flex flex-col">
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
             <div className="flex items-center gap-3">

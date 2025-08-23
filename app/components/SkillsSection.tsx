@@ -146,11 +146,39 @@ export function SkillsSection() {
         </div>
 
         {/* Skills Grid */}
-        <div ref={gridRef} className="grid grid-cols-6 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12 md:gap-6 gap-2 place-items-center">
-          {skills.map((skill) => {
+        <div ref={gridRef} className="grid grid-cols-6 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12  md:gap-x-2 md:gap-y-4 gap-2 place-items-center ">
+          {skills.map((skill, index) => {
             const IconComponent = skill.icon;
             // Show tooltip if hovered (desktop) or tapped (mobile)
             const showTooltip = activeSkill === skill.name;
+            
+            // Calculate grid columns based on screen size
+            const getGridCols = () => {
+              if (typeof window !== 'undefined') {
+                if (window.innerWidth >= 1024) return 12; // lg
+                if (window.innerWidth >= 768) return 10;  // md
+                if (window.innerWidth >= 640) return 8;   // sm
+                return 6; // default
+              }
+              return 6;
+            };
+            
+            const gridCols = getGridCols();
+            const colPosition = index % gridCols;
+            const isLeftEdge = colPosition < 2;
+            const isRightEdge = colPosition >= gridCols - 2;
+            
+            // Smart positioning for tooltip
+            const getTooltipClasses = () => {
+              if (isLeftEdge) {
+                return 'absolute bottom-full mb-2 left-0';
+              } else if (isRightEdge) {
+                return 'absolute bottom-full mb-2 right-0';
+              } else {
+                return 'absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2';
+              }
+            };
+            
             return (
               <div
                 key={skill.name}
@@ -164,14 +192,14 @@ export function SkillsSection() {
                 }}
               >
                 {/* Icon Container */}
-                <div className={`w-12 h-12 flex items-center justify-center rounded-lg 
+                <div className={`w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-lg 
                               transition-all duration-200 ease-in-out
                               hover:scale-110 hover:shadow-lg dark:hover:shadow-white/5
                               ${skill.primary 
                                 ? 'bg-blue-50 dark:bg-blue-900/30 border-2 border-blue-200 dark:border-blue-700 hover:bg-blue-100 dark:hover:bg-blue-800/40' 
                                 : 'bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700'
                               }`}>
-                  <IconComponent className={`w-6 h-6 transition-colors duration-200
+                  <IconComponent className={`w-5 h-5 sm:w-6 sm:h-6 transition-colors duration-200
                                          ${skill.primary 
                                            ? 'text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300' 
                                            : 'text-gray-700 dark:text-gray-300 group-hover:text-black dark:group-hover:text-white'
@@ -185,18 +213,23 @@ export function SkillsSection() {
 
                 {/* Tooltip: show on hover (desktop) or tap (mobile) */}
                 <div
-                  className={`absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2
+                  className={`${getTooltipClasses()}
                     bg-black dark:bg-white text-white dark:text-black
                     text-xs py-1 px-2 rounded whitespace-nowrap z-10
                     ${showTooltip ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}
                     group-hover:opacity-100 group-hover:visible transition-all duration-200
                   `}
+                  style={{
+                    maxWidth: 'calc(100vw - 2rem)'
+                  }}
                 >
-                  {skill.name}
-                  {skill.primary && <span className="text-blue-300 dark:text-blue-600"> ★</span>}
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2
+                  <span className="block truncate max-w-full">
+                    {skill.name}
+                    {skill.primary && <span className="text-blue-300 dark:text-blue-600"> ★</span>}
+                  </span>
+                  <div className={`absolute top-full ${isLeftEdge ? 'left-4' : isRightEdge ? 'right-4' : 'left-1/2 transform -translate-x-1/2'}
                                 border-l-4 border-r-4 border-t-4
-                                border-transparent border-t-black dark:border-t-white"></div>
+                                border-transparent border-t-black dark:border-t-white`}></div>
                 </div>
               </div>
             );
