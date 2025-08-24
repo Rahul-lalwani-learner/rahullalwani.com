@@ -102,14 +102,13 @@ export function SkillsSection() {
     return () => document.removeEventListener('click', handleClick);
   }, []);
 
-  // Auto-hide tooltip after 2 seconds on mobile
+  // Auto-hide tooltip after 2 seconds on all screen sizes
   useEffect(() => {
-    if (activeSkill && typeof window !== 'undefined' && window.innerWidth < 768) {
+    if (activeSkill) {
       // Clear existing timeout
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
-      
       // Set new timeout to hide after 2 seconds
       timeoutRef.current = setTimeout(() => {
         setActiveSkill(null);
@@ -125,6 +124,21 @@ export function SkillsSection() {
       }
     };
   }, [activeSkill]);
+
+  // Hydration-safe gridCols state
+  const [gridCols, setGridCols] = useState(6);
+
+  useEffect(() => {
+    function updateGridCols() {
+      if (window.innerWidth >= 1024) setGridCols(12);
+      else if (window.innerWidth >= 768) setGridCols(10);
+      else if (window.innerWidth >= 640) setGridCols(8);
+      else setGridCols(6);
+    }
+    updateGridCols();
+    window.addEventListener('resize', updateGridCols);
+    return () => window.removeEventListener('resize', updateGridCols);
+  }, []);
 
   return (
     <section className="max-w-3xl m-auto p-4 md:py-16 py-8">
@@ -151,23 +165,11 @@ export function SkillsSection() {
             const IconComponent = skill.icon;
             // Show tooltip if hovered (desktop) or tapped (mobile)
             const showTooltip = activeSkill === skill.name;
-            
-            // Calculate grid columns based on screen size
-            const getGridCols = () => {
-              if (typeof window !== 'undefined') {
-                if (window.innerWidth >= 1024) return 12; // lg
-                if (window.innerWidth >= 768) return 10;  // md
-                if (window.innerWidth >= 640) return 8;   // sm
-                return 6; // default
-              }
-              return 6;
-            };
-            
-            const gridCols = getGridCols();
+
             const colPosition = index % gridCols;
             const isLeftEdge = colPosition < 2;
             const isRightEdge = colPosition >= gridCols - 2;
-            
+
             // Smart positioning for tooltip
             const getTooltipClasses = () => {
               if (isLeftEdge) {
@@ -178,17 +180,16 @@ export function SkillsSection() {
                 return 'absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2';
               }
             };
-            
+
             return (
               <div
                 key={skill.name}
                 className="group relative flex items-center justify-center"
                 onClick={e => {
-                  // Only handle on mobile
-                  if (window.innerWidth < 768) {
-                    e.stopPropagation();
-                    setActiveSkill(activeSkill === skill.name ? null : skill.name);
-                  }
+                  // can also add if condition to check window.innerWidth < 786
+                  // if want to add that only for only for mobiles
+                  e.stopPropagation();
+                  setActiveSkill(activeSkill === skill.name ? null : skill.name);
                 }}
               >
                 {/* Icon Container */}
