@@ -51,7 +51,7 @@ export function ChatBot() {
     }
   }, [isChatOpen]);
 
-  // Show tooltip after 1 second delay with fade animation
+  // Show tooltip after 2 second delay with fade animation
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowTooltip(true);
@@ -59,7 +59,7 @@ export function ChatBot() {
       setTimeout(() => {
         setTooltipVisible(true);
       }, 50);
-    }, 1000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);

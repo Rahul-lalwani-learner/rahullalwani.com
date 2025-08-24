@@ -1,57 +1,30 @@
 {
   "projects": [
     {
-      "name": "Multi-Chain Crypto Wallet (Solana & Ethereum)",
-      "description": "Multi-chain crypto wallet built with Next.js, supporting Solana and Ethereum. Uses BIP39 mnemonics and BIP44 derivation for secure key management.",
-      "image": "/multi-chain-wallet.png",
+      "name": "SolLaunch - Solana Token Launchpad",
+      "description": "User-friendly launchpad for creating and minting SPL tokens on Solana. Features instant minting, multi-network support, wallet integration, and a modern UI.",
+      "image": "/launchpad.png",
       "tags": [
         "Next.js",
-        "TypeScript",
         "Solana",
-        "Ethereum",
         "Web3.js",
-        "Ethers.js",
-        "BIP39",
-        "Cryptography",
-        "Multi-Chain"
+        "SPL Token",
+        "Wallet Adapter",
+        "Tailwind CSS",
+        "TypeScript",
+        "Launchpad"
       ],
       "type": "Web3",
       "links": [
         {
-          "name": "Website",
-          "href": "https://wallet.rahullalwani.com",
+          "name": "Visit",
+          "href": "https://launchpad.rahullalwani.com/",
           "icon": "globe"
-        }, 
+        },
         {
           "name": "Source",
-          "href": "https://github.com/Rahul-lalwani-learner/Multi-chain-wallet",
+          "href": "https://github.com/Rahul-lalwani-learner/token-lanchpad-with-token-mint",
           "icon": "github"
-        }
-      ]
-    },
-    {
-      "name": "ExcaliDraw \u2013 Collaborative Drawing & Chat App",
-      "description": "Real-time collaborative drawing app with WebSocket-powered chat, built using Next.js, React, and Prisma.",
-      "image": "/excalidraw.png",
-      "tags": [
-        "Next.js",
-        "WebSocket",
-        "Prisma",
-        "React",
-        "PostgreSQL", 
-        "TurboRepo"
-      ],
-      "type": "WebDev",
-      "links": [
-        {
-          "name": "Source",
-          "href": "https://github.com/Rahul-lalwani-learner/excalidraw-draw-app",
-          "icon": "github"
-        }, 
-        {
-          "name": "Post",
-          "href": "https://www.linkedin.com/posts/itsrahullalwani_fullstackdevelopment-react-nextjs-activity-7349331017846915075-7DKk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2GySsBjV6nZZMia9ZgINf0otHbSnXeMM4",
-          "icon": "linkedin"
         }
       ]
     },
@@ -84,6 +57,32 @@
         {
           "name": "Post",
           "href": "https://www.linkedin.com/posts/itsrahullalwani_just-wrapped-up-a-project-ive-been-working-activity-7364712048288526336-PWIt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2GySsBjV6nZZMia9ZgINf0otHbSnXeMM4",
+          "icon": "linkedin"
+        }
+      ]
+    },
+    {
+      "name": "ExcaliDraw \u2013 Collaborative Drawing & Chat App",
+      "description": "Real-time collaborative drawing app with WebSocket-powered chat, built using Next.js, React, and Prisma.",
+      "image": "/excalidraw.png",
+      "tags": [
+        "Next.js",
+        "WebSocket",
+        "Prisma",
+        "React",
+        "PostgreSQL", 
+        "TurboRepo"
+      ],
+      "type": "WebDev",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Rahul-lalwani-learner/excalidraw-draw-app",
+          "icon": "github"
+        }, 
+        {
+          "name": "Post",
+          "href": "https://www.linkedin.com/posts/itsrahullalwani_fullstackdevelopment-react-nextjs-activity-7349331017846915075-7DKk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2GySsBjV6nZZMia9ZgINf0otHbSnXeMM4",
           "icon": "linkedin"
         }
       ]
@@ -175,6 +174,35 @@
           "name": "Visit",
           "href": "https://solana-wallet.rahullalwani.com/",
           "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "Multi-Chain Crypto Wallet (Solana & Ethereum)",
+      "description": "Multi-chain crypto wallet built with Next.js, supporting Solana and Ethereum. Uses BIP39 mnemonics and BIP44 derivation for secure key management.",
+      "image": "/multi-chain-wallet.png",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Solana",
+        "Ethereum",
+        "Web3.js",
+        "Ethers.js",
+        "BIP39",
+        "Cryptography",
+        "Multi-Chain"
+      ],
+      "type": "Web3",
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://wallet.rahullalwani.com",
+          "icon": "globe"
+        }, 
+        {
+          "name": "Source",
+          "href": "https://github.com/Rahul-lalwani-learner/Multi-chain-wallet",
+          "icon": "github"
         }
       ]
     },
@@ -495,34 +523,6 @@
         {
           "name": "Source",
           "href": "https://github.com/Rahul-lalwani-learner/Centralized-LST",
-          "icon": "github"
-        }
-      ]
-    },
-    {
-      "name": "SolLaunch - Solana Token Launchpad",
-      "description": "User-friendly launchpad for creating and minting SPL tokens on Solana. Features instant minting, multi-network support, wallet integration, and a modern UI.",
-      "image": "/launchpad.png",
-      "tags": [
-        "Next.js",
-        "Solana",
-        "Web3.js",
-        "SPL Token",
-        "Wallet Adapter",
-        "Tailwind CSS",
-        "TypeScript",
-        "Launchpad"
-      ],
-      "type": "Web3",
-      "links": [
-        {
-          "name": "Visit",
-          "href": "https://launchpad.rahullalwani.com/",
-          "icon": "globe"
-        },
-        {
-          "name": "Source",
-          "href": "https://github.com/Rahul-lalwani-learner/token-lanchpad-with-token-mint",
           "icon": "github"
         }
       ]
