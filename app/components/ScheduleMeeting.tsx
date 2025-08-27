@@ -58,7 +58,7 @@ export default function ScheduleMeeting() {
           data-cal-namespace="intro-call"
           data-cal-link="itsrahullalwani/intro-call"
           data-cal-config='{"layout":"month_view"}'
-          className="w-full bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 font-semibold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl hover:bg-gray-800 dark:hover:bg-light-border focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-900 transition-all duration-300 flex items-center justify-center gap-3 group transform hover:-translate-y-1"
+          className="w-full bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 font-semibold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl hover:bg-gray-800 dark:hover:bg-light-border focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-900 transition-all duration-300 flex items-center justify-center gap-3 group transform hover:-translate-y-1 cursor-pointer"
         >
           <span className="text-lg">Book Your Slot</span>
           <svg className="w-5 h-5 transform transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">

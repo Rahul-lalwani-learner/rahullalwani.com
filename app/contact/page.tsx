@@ -111,7 +111,7 @@ export default function Contact(){
                         <button
                             type="submit"
                             disabled={isSubmitting}
-                            className="w-full bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 font-semibold py-3 px-6 rounded-lg hover:bg-gray-800 dark:hover:bg-light-border focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-900 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 group"
+                            className="w-full bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 font-semibold py-3 px-6 rounded-lg hover:bg-gray-800 dark:hover:bg-light-border focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-900 transition-all duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 group"
                         >
                             {isSubmitting ? (
                                 <>
