@@ -32,7 +32,7 @@ export default function ScheduleMeeting() {
               Let&apos;s Connect
             </h3>
             <span className="text-sm font-medium text-blue-600 dark:text-blue-400 leading-tight">
-              1:1 Direct Call
+              Quick Sync
             </span>
           </div>
         </div>
