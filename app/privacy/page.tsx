@@ -66,12 +66,23 @@ export default function Privacy(){
                                 </p>
                             </div>
                             
+                            <div className="border-l-4 border-purple-500 pl-6">
+                                <h3 className="text-xl font-medium text-black dark:text-white mb-3">
+                                    Scheduling & Meetings
+                                </h3>
+                                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                                    When you schedule a meeting through the integrated Cal.com booking system, your scheduling data 
+                                    is handled by Cal.com according to their privacy policy. Basic meeting details (time, date) may 
+                                    be stored for calendar management and communication purposes.
+                                </p>
+                            </div>
+                            
                             <div className="border-l-4 border-green-500 pl-6">
                                 <h3 className="text-xl font-medium text-black dark:text-white mb-3">
                                     Communication
                                 </h3>
                                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                                    If you reach out through the contact form or email, the information you choose to share is used 
+                                    If you reach out through the contact form, email, or schedule a direct meeting, the information you choose to share is used 
                                     solely for responding to your inquiry and potential professional collaboration.
                                 </p>
                             </div>
@@ -94,6 +105,10 @@ export default function Privacy(){
                             <li className="flex items-start">
                                 <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                                 <span>Responding to professional inquiries and collaboration opportunities</span>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                <span>Facilitating scheduled meetings and direct communication</span>
                             </li>
                             <li className="flex items-start">
                                 <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -145,15 +160,22 @@ export default function Privacy(){
                         </h2>
                         <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                             If you have questions about this privacy policy, concerns about your data, or suggestions for improvement, 
-                            I&apos;m always happy to discuss. Reach out to me at{' '}
-                            <a 
-                                href={emailSocial?.href || "mailto:itsrahullalwani@gmail.com"} 
-                                className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors font-medium underline"
-                            >
-                                {emailSocial?.href.replace('mailto:', '') || "itsrahullalwani@gmail.com"}
-                            </a>
-                            {' '}and I&apos;ll get back to you promptly.
+                            I&apos;m always happy to discuss. You can reach out through:
                         </p>
+                        <div className="space-y-2 text-gray-700 dark:text-gray-300">
+                            <p>
+                                📧 Email:{' '}
+                                <a 
+                                    href={emailSocial?.href || "mailto:itsrahullalwani@gmail.com"} 
+                                    className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors font-medium underline"
+                                >
+                                    {emailSocial?.href.replace('mailto:', '') || "itsrahullalwani@gmail.com"}
+                                </a>
+                            </p>
+                            <p>
+                                📅 Schedule a quick call through the contact page for immediate discussion
+                            </p>
+                        </div>
                     </section>
                 </div>
             </div>

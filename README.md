@@ -15,6 +15,7 @@
 - **Dark/Light Mode**: Seamless theme switching with system preference detection
 - **Dynamic Sections**: Experience, Education, Projects, Publications, and Contact
 - **Interactive Components**: Smooth animations and hover effects
+- **Direct Scheduling**: Integrated Cal.com booking system for instant meeting scheduling
 - **SEO Optimized**: Meta tags, structured data, and performance optimized
 
 ### 🤖 AI-Powered Chatbot
@@ -38,6 +39,7 @@ Next.js 15 (App Router) + React 19
 ├── TypeScript for type safety
 ├── TailwindCSS for styling
 ├── Custom UI components
+├── Cal.com scheduling integration
 └── Responsive design system
 ```
 
@@ -49,6 +51,15 @@ AI-Powered Chatbot
 ├── Google text-embedding-004
 ├── Upstash Redis (Caching)
 └── RAG Implementation
+```
+
+### Communication Stack
+```
+Contact & Scheduling
+├── Cal.com booking system
+├── Direct meeting scheduling
+├── Contact form integration
+└── Email communication
 ```
 
 ### Data Management
@@ -82,6 +93,8 @@ cd personal-portfolio
 npm install --legacy-peer-deps
 # or
 yarn install --legacy-peer-deps
+
+# Note: --legacy-peer-deps is required for Cal.com embed compatibility
 ```
 
 3. **Environment Setup**
@@ -121,10 +134,12 @@ personal-portfolio/
 │   │   └── chat/                 # Chatbot API endpoint
 │   ├── components/               # React Components
 │   │   ├── ChatBot.tsx          # AI Chatbot component
+│   │   ├── ScheduleMeeting.tsx  # Cal.com booking integration
 │   │   ├── MainSection.tsx      # Hero section
 │   │   ├── ExperienceEducation.tsx
 │   │   ├── FeaturedSection.tsx
 │   │   └── Navbar.tsx           # Navigation
+│   ├── contact/                  # Contact page with scheduling
 │   ├── context/                  # React Context
 │   ├── ui/                       # UI Components & Icons
 │   └── page.tsx                  # Homepage
@@ -164,6 +179,28 @@ npm run build-embeddings  # Generate/update vector embeddings
 npm run lint         # Run ESLint
 npm run cache:clear  # Clear Redis cache
 ```
+
+## 📅 Direct Scheduling System
+
+### Cal.com Integration
+The portfolio features an integrated Cal.com booking system that allows visitors to:
+
+- **Skip Email Back-and-Forth**: Direct calendar booking without email exchanges
+- **15-Minute Quick Calls**: Perfect for opportunities, ideas, or friendly chats
+- **Instant Scheduling**: Real-time calendar availability with automatic confirmations
+- **Professional Experience**: Seamless booking flow with modern UI/UX
+
+### How It Works
+1. **Contact Page Integration**: Embedded directly in the contact page
+2. **Popup Calendar**: Clean modal interface powered by Cal.com
+3. **Automatic Confirmations**: Email confirmations sent to both parties
+4. **Calendar Sync**: Integrates with Google Calendar, Outlook, and other providers
+
+### Scheduling Options
+- **Opportunities & Collaborations**: Discuss work opportunities and partnerships
+- **Technical Discussions**: Share ideas and technical insights
+- **Quick Introductions**: 15-minute friendly chats for networking
+- **Project Consultations**: Brief project discussions and advice
 
 ## 🤖 Chatbot System
 
@@ -288,9 +325,16 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Rahul Lalwani**
 - 🌐 Portfolio: [rahullalwani.com](https://rahullalwani.com)
-- 💼 LinkedIn: [rahul-lalwani-learner](https://linkedin.com/in/rahul-lalwani-learner)
+- � Schedule a Call: Book directly through the contact page
+- �💼 LinkedIn: [rahul-lalwani-learner](https://linkedin.com/in/rahul-lalwani-learner)
 - 🐙 GitHub: [Rahul-lalwani-learner](https://github.com/Rahul-lalwani-learner)
 - 📧 Email: rahul.lalwani.learner@gmail.com
+
+### Preferred Communication
+1. **Quick Discussions**: Use the integrated scheduling system for immediate calls
+2. **Detailed Inquiries**: Contact form for comprehensive project discussions
+3. **Professional Networking**: LinkedIn for industry connections
+4. **Technical Collaboration**: GitHub for code-related discussions
 
 ---
 
