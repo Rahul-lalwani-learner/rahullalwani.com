@@ -2,7 +2,7 @@
 import { Calistoga } from "next/font/google"
 import { useState } from "react"
 import Link from "next/link"
-import socialsData from "../../src/socials.json"
+import ScheduleMeeting from "../components/ScheduleMeeting"
 
 const giestCalistoga = Calistoga({
     variable: "--font-calistoga",
@@ -18,8 +18,6 @@ export default function Contact(){
     })
     const [isSubmitting, setIsSubmitting] = useState(false)
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
-
-    const emailSocial = socialsData.socials.find(social => social.icon === 'mail')
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target
@@ -161,21 +159,8 @@ export default function Contact(){
                     .
                 </div>
 
-                {/* Alternative Contact */}
-                <div className="mt-8 p-6 bg-gray-50 dark:bg-gray-800 rounded-lg border border-light-border dark:border-gray-200">
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                        Prefer email?
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-400 mb-3">
-                        You can also reach me directly at:
-                    </p>
-                    <a 
-                        href={emailSocial?.href || "mailto:itsrahullalwani@gmail.com"}
-                        className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium underline transition-colors"
-                    >
-                        {emailSocial?.href.replace('mailto:', '') || "itsrahullalwani@gmail.com"}
-                    </a>
-                </div>
+                {/* Schedule Meeting Section */}
+                <ScheduleMeeting />
             </div>
         </div>
     )
