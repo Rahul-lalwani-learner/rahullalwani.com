@@ -1,6 +1,7 @@
 'use client'
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
+import { CheckTick } from "../ui/icons/CheckTick";
 
 export default function ScheduleMeeting() {
   useEffect(() => {
@@ -38,10 +39,19 @@ export default function ScheduleMeeting() {
         </div>
         
         {/* Description */}
-        <div className="mb-6">
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-            Skip the back-and-forth emails. Book a quick call for opportunities, ideas, or just to say hi!
-          </p>
+        <div className="mb-6 space-y-2">
+          <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+            <CheckTick/>
+            Skip back-and-forth emails
+          </div>
+          <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+            <CheckTick/>
+            Discuss opportunities & ideas
+          </div>
+          <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+            <CheckTick/>
+            Quick 15-minute call
+          </div>
         </div>
 
         {/* CTA Button */}
