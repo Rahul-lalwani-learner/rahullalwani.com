@@ -223,7 +223,7 @@ export function ChatBot() {
                   Send a message to start the chat!
                 </h4>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  You can ask the bot anything about me and it will help to find the relevant information!
+                  I&apos;m a RAG-powered AI assistant with comprehensive knowledge about Rahul&apos;s background, skills, and projects!
                 </p>
               </div>
             )}
