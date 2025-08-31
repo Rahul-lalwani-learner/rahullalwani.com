@@ -17,7 +17,7 @@
       "type": "Web3",
       "links": [
         {
-          "name": "Visit",
+          "name": "View Website",
           "href": "https://launchpad.rahullalwani.com/",
           "icon": "globe"
         },
@@ -45,7 +45,7 @@
       "type": "AI/ML/DL",
       "links": [
         {
-          "name": "Website",
+          "name": "View Website",
           "href": "https://multiresearch.streamlit.app/",
           "icon": "globe"
         },
@@ -128,7 +128,7 @@
       "type": "WebDev",
       "links": [
         {
-          "name": "Visit",
+          "name": "View Website",
           "href": "https://extramemory.rahullalwani.com/",
           "icon": "globe"
         },
@@ -166,14 +166,14 @@
       "type": "Web3",
       "links": [
         {
+          "name": "View Website",
+          "href": "https://solana-wallet.rahullalwani.com/",
+          "icon": "globe"
+        },
+        {
           "name": "Source",
           "href": "https://github.com/Rahul-lalwani-learner/Crypto-wallet-with-rpc",
           "icon": "github"
-        }, 
-        {
-          "name": "Visit",
-          "href": "https://solana-wallet.rahullalwani.com/",
-          "icon": "globe"
         }
       ]
     },
@@ -195,7 +195,7 @@
       "type": "Web3",
       "links": [
         {
-          "name": "Website",
+          "name": "View Website",
           "href": "https://wallet.rahullalwani.com",
           "icon": "globe"
         }, 
@@ -516,7 +516,7 @@
       "type": "Web3",
       "links": [
         {
-          "name": "Visit",
+          "name": "View Website",
           "href": "https://lst-sample.rahullalwani.com/",
           "icon": "globe"
         },
