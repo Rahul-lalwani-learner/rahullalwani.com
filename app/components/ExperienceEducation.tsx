@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { CardLink } from '../ui/cardLinks';
 import experienceData from '../../src/experiences.json';
@@ -61,12 +62,13 @@ export function ExperienceEducation() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 pb-8 pt-16">
-      <div className="flex bg-gray-100 dark:bg-gray-800 rounded-lg p-1 mb-8 max-w-md">
+      {/* Animated Tab Bar */}
+      <div className="relative flex bg-gray-100 dark:bg-gray-800 rounded-lg p-1 mb-8 max-w-md">
         <button
           onClick={() => setActiveTab('Experience')}
-          className={`flex-1 px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 cursor-pointer ${
+          className={`relative z-10 flex-1 px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 cursor-pointer ${
             activeTab === 'Experience'
-              ? 'bg-white dark:bg-background-black text-black dark:text-white shadow-sm'
+              ? 'text-black dark:text-white'
               : 'text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white'
           }`}
         >
@@ -74,14 +76,30 @@ export function ExperienceEducation() {
         </button>
         <button
           onClick={() => setActiveTab('education')}
-          className={`flex-1 px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 cursor-pointer ${
+          className={`relative z-10 flex-1 px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 cursor-pointer ${
             activeTab === 'education'
-              ? 'bg-white dark:bg-background-black text-black dark:text-white shadow-sm'
+              ? 'text-black dark:text-white'
               : 'text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white'
           }`}
         >
           Education
         </button>
+
+        {/* Animated Active Tab Indicator */}
+        <motion.div
+          layoutId="activeTab"
+          transition={{
+            type: 'spring',
+            stiffness: 500,
+            damping: 35,
+          }}
+          className="absolute inset-y-0 m-1 w-1/2 rounded-md bg-white dark:bg-background-black shadow-sm"
+          style={
+            activeTab === 'Experience'
+              ? { left: '0%', right: 'auto' }
+              : { left: 'auto', right: '0%' }
+          }
+        />
       </div>
 
       {/* Content */}
