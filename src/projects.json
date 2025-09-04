@@ -88,6 +88,26 @@
       ]
     },
     {
+      "name": "OpenSource Issue Search and Resolve",
+      "description": "A multi-agent LangGraph workflow that automates searching, analyzing, and solving issues in GitHub repositories with human-in-the-loop decision points.",
+      "image": "/opensource-issue-resolver.png",
+      "tags": [
+        "LangGraph",
+        "LangChain",
+        "AI Agents",
+        "GitHub Automation",
+        "Workflow Orchestration"
+      ],
+      "type": "AI/ML/DL",
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Rahul-lalwani-learner/OpenSource-Github-Multi-Agent-LangGraph-Researcher",
+          "icon": "github"
+        }
+      ]
+    },
+    {
       "name": "Heart and Respiratory Sound Expert System",
     "description": "AI system for detecting heart and lung anomalies from auscultation sounds with a clinical interface.",
       "image": "/heart-respiratory-sound.png",

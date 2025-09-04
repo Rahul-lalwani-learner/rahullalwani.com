@@ -55,7 +55,7 @@ export default function Projects() {
                         key={cat}
                         ref={el => { tabRefs.current[idx] = el; }}
                         onClick={() => setActiveCategory(cat)}
-                        className={`relative z-10 px-2 py-2 sm:px-4 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer w-full sm:w-auto text-center ${
+                        className={`relative z-5 px-2 py-2 sm:px-4 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer w-full sm:w-auto text-center ${
                             activeCategory === cat
                                 ? 'text-black dark:text-white'
                                 : 'text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white'
