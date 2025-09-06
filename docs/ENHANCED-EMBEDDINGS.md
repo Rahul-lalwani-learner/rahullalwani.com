@@ -18,7 +18,7 @@ Added comprehensive homepage information to embeddings including:
 - **Professional Identity**: AI Developer & Web Enthusiast, Backend by trade, full-stack by passion
 - **Contact Information**: Email, LinkedIn, GitHub
 - **Social Media Profiles**: All social links from socials.json
-- **Resume Location**: [/Rahul_resume.pdf](https://drive.google.com/file/d/11o8Jb7_n45t4V9yYen1i_QaxN7IURQsb/view?usp=sharing)
+- **Resume Location**: [/Rahul_resume.pdf](https://drive.google.com/file/d/1SlcxnKh9HRbkQ3sKdS8w9R4flozbaxyH/view?usp=sharing)
 
 ### 2. **Dynamic Skills Aggregation**
 - Automatically extracts all technologies from project tags
