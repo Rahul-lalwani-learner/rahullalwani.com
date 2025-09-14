@@ -16,7 +16,7 @@ export function NavBar({ height }: NavBarProps){
     const { theme, toggleTheme } = useTheme()
     const { bot, toggleBot } = useBot()
     
-    return <div className={`transition-all duration-100 items-center w-full ${height} justify-between bg-white/70 dark:bg-background-black/80 sticky top-0 backdrop-blur-xs z-10`}>
+    return <div className={`transition-all duration-100 items-center w-full ${height} justify-between bg-white/70 dark:bg-background-black/80 sticky top-0 backdrop-blur-xs z-100`}>
         <div className="flex justify-between items-center h-full m-auto max-w-3xl px-4 sm:text-base text-sm">
             <div>
                 <button onClick= {()=>{router.push('/')}} className="p-2 pl-0 hover:text-black focus:text-black dark:focus:text-white dark:text-gray-700 dark:hover:text-white text-gray-200 transition-colors cursor-pointer">home</button>
