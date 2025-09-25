@@ -1,6 +1,48 @@
 {
   "experience": [
     {
+      "name": "RavenRisk AI",
+      "href": "https://ravenrisk.ai/",
+      "title": "AI & ML Engineer",
+      "logo": "/RavenRisk.png",
+      "start": "Sep 2025",
+      "end": "Present",
+      "location": "NewYork, United States",
+      "description": [
+        "Working on the GenAI side for new feature development and enhancements.",
+        "Focused on MLOps and deployment, ensuring seamless integration of AI models into production.",
+        "Acting as a bridge between AI and web development teams to deliver end-to-end solutions."
+      ],
+      "links": [
+        {
+          "name": "About Company",
+          "href": "https://ravenrisk.ai/our-company",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "Accenture India",
+      "href": "https://www.accenture.com/in-en",
+      "title": "Data & AI Intern",
+      "logo": "/accenture.png",
+      "start": "Feb 2025",
+      "end": "Jun 2025",
+      "location": "Hyderabad, Telangana, India",
+      "description": [
+        "Completed a data engineering internship at Accenture, focusing on Snowflake and Gen AI",
+        "Built dynamic stored procedures, automated data loading and warehouse scaling, and integrated AWS services with Snowflake",
+        "Contributed to a Gen AI project that mapped employee skills to job trends for internal career growth"
+      ],
+      "links": [
+        {
+          "name": "Certificate",
+          "href": "https://drive.google.com/file/d/1btNpbRrlF2FxFy_pKtOd3_cKqG5Ikfxx/view?usp=sharing",
+          "icon": "document"
+        }
+      ]
+    },
+    {
       "name": "Linnaeus University",
       "href": "https://lnu.se/en/",
       "title": "Research Intern",
@@ -40,27 +82,7 @@
           "icon": "document"
         }
       ]
-    },
-    {
-      "name": "Accenture India",
-      "href": "https://www.accenture.com/in-en",
-      "title": "Data & AI Intern",
-      "logo": "/accenture.png",
-      "start": "Feb 2025",
-      "end": "Jun 2025",
-      "location": "Hyderabad, Telangana, India",
-      "description": [
-        "Completed a data engineering internship at Accenture, focusing on Snowflake and Gen AI",
-        "Built dynamic stored procedures, automated data loading and warehouse scaling, and integrated AWS services with Snowflake",
-        "Contributed to a Gen AI project that mapped employee skills to job trends for internal career growth"
-      ],
-      "links": [
-        {
-          "name": "Certificate",
-          "href": "https://drive.google.com/file/d/1btNpbRrlF2FxFy_pKtOd3_cKqG5Ikfxx/view?usp=sharing",
-          "icon": "document"
-        }
-      ]
     }
+    
   ]
 }

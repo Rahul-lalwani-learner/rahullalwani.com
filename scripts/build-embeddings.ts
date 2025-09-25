@@ -106,18 +106,18 @@ async function buildEmbeddings() {
     
     const skillsList = Array.from(allTechnologies).join(', ');
     
-    const homepageContent = `
-Rahul Lalwani - AI Developer & Web Enthusiast
+  const homepageContent = `
+Rahul Lalwani - AI & ML Engineer at RavenRisk AI
 
-Bio: Passionate about AI and web development, blending intelligence with seamless user experiences. With a strong academic foundation, Rahul secured AIR 418 and AIR 421 in GATE 2025-24 (DA), showcasing his dedication and expertise in the field.
+Bio: Passionate about AI and web development, blending intelligence with seamless user experiences. Rahul has completed his B.Tech in Artificial Intelligence and Machine Learning from Madhav Institute of Technology and Science, and now works as an AI & ML Engineer at RavenRisk AI, New York, United States.
 
-Professional Identity: AI Developer & Web Enthusiast, Backend by trade, full-stack by passion. He builds and self-hosts innovative web applications and AI solutions.
+Current Role: AI & ML Engineer at RavenRisk AI (Sep 2025 - Present). Working on GenAI feature development, MLOps, and bridging AI with web development teams to deliver end-to-end solutions.
 
-Key Achievement: AIR 418 and AIR 421 in GATE 2025-24 (DA) - All India Rank in Graduate Aptitude Test in Engineering for Data Science & Artificial Intelligence.
+Key Achievements: AIR 418 and AIR 421 in GATE 2025-24 (DA) - All India Rank in Graduate Aptitude Test in Engineering for Data Science & Artificial Intelligence. Successfully transitioned from academia to industry, contributing to production-level AI solutions.
 
 Technical Skills: ${skillsList}
 
-Core Competencies: Full Stack Development, Data Analysis, AI Enthusiast, Web Development, React, Next.js, TypeScript, Machine Learning, Data Science, AI/ML, Web Technologies, Cloud Computing.
+Core Competencies: Full Stack Development, Data Analysis, AI/ML Engineering, MLOps, Web Development, React, Next.js, TypeScript, Machine Learning, Data Science, Cloud Computing.
 
 Contact Information: 
 - Email: itsrahullalwani@gmail.com
@@ -127,15 +127,15 @@ Contact Information:
 Social Media Profiles:
 ${socials.map((social: Social) => `- ${social.name}: ${social.href}`).join('\n')}
 
-Professional Summary: Backend by trade, full-stack by passion. Builds and self-hosts innovative web applications and AI solutions with expertise in modern web technologies and artificial intelligence.
+Professional Summary: AI & ML Engineer at RavenRisk AI, with a strong foundation in full-stack development and artificial intelligence. Experienced in building and deploying innovative web applications and AI solutions. Adept at integrating AI models into production and collaborating across teams.
 
-Current Learning & Development: Currently learning Web3 technologies and working on integrating Web3 with traditional web development. Exploring blockchain development, smart contracts, and decentralized applications (dApps) to bridge the gap between conventional web technologies and the decentralized web.
+Current Learning & Development: Exploring advanced MLOps practices, scalable AI deployment, and the intersection of Web3 with AI. Continuously learning to bridge the gap between traditional and decentralized web technologies.
 
-Resume: Available at https://drive.google.com/file/d/1SlcxnKh9HRbkQ3sKdS8w9R4flozbaxyH/view?usp=sharing, 
+Resume: Available at https://drive.google.com/file/d/1SlcxnKh9HRbkQ3sKdS8w9R4flozbaxyH/view?usp=sharing
 
-About: AI Developer passionate about creating intelligent web applications and solutions. Strong academic performance with top rankings in GATE examinations. Experienced in full-stack development, machine learning, and data science projects. Currently expanding expertise into Web3 and blockchain technologies.
+About: AI & ML Engineer passionate about creating intelligent, production-ready web applications and solutions. Strong academic background with top GATE rankings, now applying expertise in industry. Experienced in full-stack development, machine learning, and data science projects, with a focus on real-world impact.
 
-Rahul Lalwani is a dedicated problem solver with a strong grasp of Data Structures and Algorithms, as demonstrated by his LeetCode profile, where he has solved 593 problems across all difficulty levels—131 easy, 369 medium, and 93 hard—out of 3617 available. With a global rank of 102,486, he has made over 1,100 submissions in 2024 alone, maintaining a streak of 132 days and staying active for 303 days this year. Rahul has earned 16 badges, including the prestigious 365 Days Badge, reflecting his consistency and commitment. As a B.Tech student specializing in Artificial Intelligence and Machine Learning at Madhav Institute of Technology and Science, he combines academic knowledge with daily coding practice to continually sharpen his algorithmic thinking and problem-solving skills. 
+Rahul Lalwani is a dedicated problem solver with a strong grasp of Data Structures and Algorithms, as demonstrated by his LeetCode profile, where he has solved 593 problems across all difficulty levels—131 easy, 369 medium, and 93 hard—out of 3617 available. With a global rank of 102,486, he has made over 1,100 submissions in 2024 alone, maintaining a streak of 132 days and staying active for 303 days this year. Rahul has earned 16 badges, including the prestigious 365 Days Badge, reflecting his consistency and commitment. Now, as a professional engineer, he continues to sharpen his algorithmic thinking and problem-solving skills in real-world projects.
 Leetcode profile link - https://leetcode.com/u/RahulLalwani/
 `;
 
