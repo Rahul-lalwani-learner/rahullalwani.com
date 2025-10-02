@@ -109,7 +109,7 @@ async function buildEmbeddings() {
   const homepageContent = `
 Rahul Lalwani - AI & ML Engineer at RavenRisk AI
 
-Bio: Passionate about AI and web development, blending intelligence with seamless user experiences. Rahul has completed his B.Tech in Artificial Intelligence and Machine Learning from Madhav Institute of Technology and Science, and now works as an AI & ML Engineer at RavenRisk AI, New York, United States.
+Bio: Passionate about AI and web development, blending intelligence with seamless user experiences. Rahul has completed his B.Tech in Artificial Intelligence and Machine Learning from Madhav Institute of Technology and Science, and now works as an AI & ML Engineer at RavenRisk AI, New York, United States working remotly.
 
 Current Role: AI & ML Engineer at RavenRisk AI (Sep 2025 - Present). Working on GenAI feature development, MLOps, and bridging AI with web development teams to deliver end-to-end solutions.
 
