@@ -39,7 +39,7 @@ export function ProjectCard({name, description, image, tags , links, priority = 
             {links.map((x, i)=> (
                 <div 
                     key={i} 
-                    className="relative overflow-hidden transition-all duration-300 ease-in-out group-hover:bg-gradient-to-br group-hover:from-blue-500/25 group-hover:via-blue-600/15 group-hover:to-cyan-500/10 group-hover:border-blue-400/80 group-hover:shadow-lg group-hover:shadow-blue-500/20 border border-transparent rounded-lg p-[2px] before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:translate-x-[-100%] group-hover:before:translate-x-[100%] before:transition-transform before:duration-700 before:ease-out"
+                    className="relative overflow-hidden transition-all duration-300 ease-in-out group-hover:bg-gradient-to-br group-hover:from-blue-500/25 group-hover:via-blue-600/15 group-hover:to-cyan-500/10 group-hover:border-blue-300 dark:group-hover:border-blue-600 group-hover:shadow-lg group-hover:shadow-blue-500/10 border-2  border-transparent rounded-lg p-[0px] before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:translate-x-[-100%] group-hover:before:translate-x-[100%] before:transition-transform before:duration-700 before:ease-out"
                 >
                     <CardLink name={x.name} icon={x.icon} link={x.href}/>
                 </div>
